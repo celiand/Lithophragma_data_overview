@@ -34,41 +34,86 @@
 <script>
 
   // Create map
-  const map = L.map('map').setView([48.8566, 2.3522], 5);
+  const map = L.map('map').setView([40, -100], 3);
 
   // Add OpenStreetMap tiles
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  // Add one marker
-  const marker = L.marker([39.397, -121.077]).addTo(map);
+  // data
+  const populations = [
+  {
+    id: "ORE",
+    name: "Oregon Creek",
+    lat: 39.397,
+    lon: -121.077,
+    elevation: 507,
 
-  // Popup
+    site: {
+      mothPresence: "N/A",
+      morphologicalData: true,
+      scentData: true
+    },
+
+    sequencing: {
+      diploid_BOL: 10,
+      tetraploid_BOL: 2
+    }
+  },
+
+  {
+    id: "RID",
+    name: "Riverdale Site",
+    lat: 44.052,
+    lon: -123.086,
+    elevation: 180,
+
+    site: {
+      mothPresence: "POL",
+      morphologicalData: false,
+      scentData: true
+    },
+
+    sequencing: {
+      diploid_BOL: 6,
+      tetraploid_BOL: 0
+    }
+  }
+];
+
+  populations.forEach(pop => {
+
+  const marker = L.marker([pop.lat, pop.lon]).addTo(map);
+
   marker.bindPopup(`
-    <h3>Oregon Creek</h3><br>
-    <b>Site caracteristics</b><br>
-    Short name: ORE<br>
-    Latitude: 39.397<br>
-    Longitude: -121.077<br>
-    Elevation: 507<br>
+    <h3>${pop.name}</h3>
+
+    <b>Site characteristics</b><br>
+    Short name: ${pop.id}<br>
+    Latitude: ${pop.lat}<br>
+    Longitude: ${pop.lon}<br>
+    Elevation: ${pop.elevation} m<br>
+
     <br>
-    <b>Moth presence*</b><br>
-    N/A<br>
+
+    <b>Moth presence</b><br>
+    ${pop.site.mothPresence}<br>
+
     <br>
-    <b>Sequenced individual**</b><br>
-    - Diploid BOL: 10 (long reads)<br>
-    - Tetraploid BOL: 2 (long reads)<br>
+
+    <b>Sequencing</b><br>
+    Diploid BOL: ${pop.sequencing.diploid_BOL}<br>
+    Tetraploid BOL: ${pop.sequencing.tetraploid_BOL}<br>
+
     <br>
-    <b>Phenotypic Data</b><br>
-    Morphological data: Yes<br>
-    Scent Data: Yes<br>
-    <br>
-    <br>
-    *POL = G.politella ; OBS = G.obscura<br>
-    **BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum
+
+    <b>Phenotypic data</b><br>
+    Morphological data: ${pop.site.morphologicalData ? "Yes" : "No"}<br>
+    Scent data: ${pop.site.scentData ? "Yes" : "No"}<br>
   `);
 
+});
 </script>
 
 </body>
