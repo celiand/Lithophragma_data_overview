@@ -1,6 +1,6 @@
 
   // Create map
-  const map = L.map('map').setView([40, -120], 6);
+  const map = L.map('map').setView([40, -120], 7);
 
   // Add OpenStreetMap tiles
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -248,6 +248,140 @@
       tetraploid_BOL: 0
     }
   },
+
+  {
+    id: "ELP",
+    name: "El Portal",
+    lat: 37.669,
+    lon: -119.838,
+    elevation: 487,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "COU",
+    name: "Coulterville",
+    lat: 37.661,
+    lon: -120.145,
+    elevation: 676,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "SMR",
+    name: "South Fork Merced River",
+    lat: 37.649,
+    lon: -119.883,
+    elevation: 463,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "BRI",
+    name: "Briceburg",
+    lat: 37.607,
+    lon: -119.965,
+    elevation: 363,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "IGR",
+    name: "Indian Gulch Road",
+    lat: 37.427,
+    lon: -120.165,
+    elevation: 241,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "LIL",
+    name: "Lillian Mountain",
+    lat: 37.206,
+    lon: -119.778,
+    elevation: 355,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "KER",
+    name: "Kerkhoff Lake",
+    lat: 37.148,
+    lon: -119.505,
+    elevation: 314,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
 ];
 
   populations.forEach(pop => {
