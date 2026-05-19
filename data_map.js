@@ -1,6 +1,6 @@
 
   // Create map
-  const map = L.map('map').setView([40, -110], 5);
+  const map = L.map('map').setView([40, -120], 6);
 
   // Add OpenStreetMap tiles
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
