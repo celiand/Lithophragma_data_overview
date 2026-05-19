@@ -85,13 +85,13 @@
 
     site: {
       mothPresence: "NA",
-      morphologicalData: true,
-      scentData: true
+      morphologicalData: false,
+      scentData: false
     },
 
     sequencing: {
       diploid_BOL: 10,
-      tetraploid_BOL: 2
+      tetraploid_BOL: 0
     }
   },
 
@@ -105,14 +105,71 @@
     site: {
       mothPresence: "NA",
       morphologicalData: false,
-      scentData: true
+      scentData: false
     },
 
     sequencing: {
-      diploid_BOL: 6,
+      diploid_BOL: 0,
       tetraploid_BOL: 0
     }
-  }
+  },
+
+  {
+    id: "SAM",
+    name: "South Fork American River",
+    lat: 38.795,
+    lon: -120.775,
+    elevation: 405,
+
+    site: {
+      mothPresence: "POL",
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+   {
+    id: "ELE",
+    name: "Electra",
+    lat: 38.326,
+    lon: -120.683,
+    elevation: 236,
+
+    site: {
+      mothPresence: "POL+OBS",
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "JMR",
+    name: "Jesus Maria Road",
+    lat: 38.286,
+    lon: -120.659,
+    elevation: 300,
+
+    site: {
+      mothPresence: "POL",
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
 ];
 
   populations.forEach(pop => {
