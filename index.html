@@ -21,6 +21,32 @@
       height: 100vh;
       width: 100vw;
     }
+
+    .leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.leaflet-popup-content {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.popup-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.popup-section {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid #eee;
+}
+
+.popup-label {
+  font-weight: bold;
+}
   </style>
 </head>
 
@@ -34,12 +60,19 @@
 <script>
 
   // Create map
-  const map = L.map('map').setView([40, -100], 3);
+  const map = L.map('map').setView([40, -110], 5);
 
   // Add OpenStreetMap tiles
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
+
+  //map name
+  const sequencingLabels = {
+  diploid_BOL: "Diploid BOL",
+  tetraploid_BOL: "Tetraploid BOL",
+  hexaploid_BOL: "Hexaploid BOL"
+};
 
   // data
   const populations = [
@@ -51,7 +84,7 @@
     elevation: 507,
 
     site: {
-      mothPresence: "N/A",
+      mothPresence: "NA",
       morphologicalData: true,
       scentData: true
     },
@@ -63,14 +96,14 @@
   },
 
   {
-    id: "RID",
-    name: "Riverdale Site",
-    lat: 44.052,
-    lon: -123.086,
-    elevation: 180,
+    id: "HOP",
+    name: "Hopland",
+    lat: 39.000,
+    lon: -123.074,
+    elevation: 297,
 
     site: {
-      mothPresence: "POL",
+      mothPresence: "NA",
       morphologicalData: false,
       scentData: true
     },
@@ -87,32 +120,39 @@
   const marker = L.marker([pop.lat, pop.lon]).addTo(map);
 
   marker.bindPopup(`
-    <h3>${pop.name}</h3>
+  <div class="popup-title">${pop.name}</div>
 
-    <b>Site characteristics</b><br>
-    Short name: ${pop.id}<br>
-    Latitude: ${pop.lat}<br>
-    Longitude: ${pop.lon}<br>
-    Elevation: ${pop.elevation} m<br>
+  <div class="popup-section">
+    <div><span class="popup-label">ID:</span> ${pop.id}</div>
+    <div><span class="popup-label">Lat:</span> ${pop.lat}</div>
+    <div><span class="popup-label">Lon:</span> ${pop.lon}</div>
+    <div><span class="popup-label">Elevation:</span> ${pop.elevation} m</div>
+  </div>
 
-    <br>
+  <div class="popup-section">
+    <div class="popup-label">Moth presence</div>
+    ${pop.site.mothPresence}
+  </div>
 
-    <b>Moth presence</b><br>
-    ${pop.site.mothPresence}<br>
+  <div class="popup-section">
+    <div class="popup-label">Sequencing</div>
+    ${Object.entries(pop.sequencing)
+      .filter(([_, v]) => v !== 0 && v != null)
+      .map(([k, v]) => `<div>${sequencingLabels[k] || k}: ${v}</div>`)
+      .join("")}
+  </div>
 
-    <br>
+  <div class="popup-section">
+    <div class="popup-label">Phenotypic data</div>
+    <div>Morphological: ${pop.site.morphologicalData ? "Yes" : "No"}</div>
+    <div>Scent: ${pop.site.scentData ? "Yes" : "No"}</div>
+  </div>
 
-    <b>Sequencing</b><br>
-    Diploid BOL: ${pop.sequencing.diploid_BOL}<br>
-    Tetraploid BOL: ${pop.sequencing.tetraploid_BOL}<br>
-
-    <br>
-
-    <b>Phenotypic data</b><br>
-    Morphological data: ${pop.site.morphologicalData ? "Yes" : "No"}<br>
-    Scent data: ${pop.site.scentData ? "Yes" : "No"}<br>
-  `);
-
+  <div class="popup-section" style="font-size:11px; color:#666;">
+    * POL = G. politella ; OBS = G. obscura<br>
+    ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum
+  </div>
+`);
 });
 </script>
 
