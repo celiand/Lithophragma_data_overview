@@ -382,6 +382,276 @@
     }
   },
 
+  
+  {
+    id: "RED",
+    name: "Redinger Lake",
+    lat: 37.131,
+    lon: -119.395,
+    elevation: 927,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  
+  {
+    id: "DIN",
+    name: "Dinkey Creek",
+    lat: 36.989,
+    lon: -119.125,
+    elevation: 1295,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "CHM",
+    name: "Cats Head Mountain",
+    lat: 36.965,
+    lon: -119.216,
+    elevation: 655,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "WVR",
+    name: "Watts Valley Road",
+    lat: 36.960,
+    lon: -119.348,
+    elevation: 592,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "MXN",
+    name: "Maxon Road",
+    lat: 36.917,
+    lon: -119.316,
+    elevation: 429,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+   {
+    id: "EPA",
+    name: "Eagle Peak",
+    lat: 36.914,
+    lon: -119.273,
+    elevation: 304,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "HOM",
+    name: "Hog Mountain",
+    lat: 36.885,
+    lon: -119.296,
+    elevation: 364,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+
+   {
+    id: "KNG",
+    name: "King's River",
+    lat: 36.858,
+    lon: -119.104,
+    elevation: 336,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "HUG",
+    name: "Hughes Mountain",
+    lat: 36.856,
+    lon: -119.358,
+    elevation: 304,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "WON",
+    name: "Wonder Valley",
+    lat: 36.799,
+    lon: -119.321,
+    elevation: 195,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "ELL",
+    name: "Ellis Mountain",
+    lat: 36.539,
+    lon: -119.011,
+    elevation: 329,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "PAC",
+    name: "Paradise Creek",
+    lat: 36.514,
+    lon: -118.760,
+    elevation: 980,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "MBL",
+    name: "Marble Falls Trails, Sequoia NP",
+    lat: 36.522,
+    lon: -118.799,
+    elevation: 686,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+
+  {
+    id: "NFK",
+    name: "North Fork Kaweah River",
+    lat: 36.521,
+    lon: -118.894,
+    elevation: 477,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
 ];
 
   populations.forEach(pop => {
