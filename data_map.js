@@ -7,7 +7,9 @@
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  //map name
+  const allMarkers = [];
+
+  //name mapping
   const sequencingLabels = {
   diploid_BOL: "Diploid BOL",
   tetraploid_BOL: "Tetraploid BOL",
@@ -24,7 +26,7 @@
     elevation: 507,
 
     site: {
-      mothPresence: "NA",
+      moths: [],
       morphologicalData: false,
       scentData: false
     },
@@ -43,7 +45,7 @@
     elevation: 297,
 
     site: {
-      mothPresence: "NA",
+     moths: [],
       morphologicalData: false,
       scentData: false
     },
@@ -62,7 +64,7 @@
     elevation: 405,
 
     site: {
-      mothPresence: "POL",
+      moths: ["POL"],
       morphologicalData: false,
       scentData: false
     },
@@ -81,7 +83,7 @@
     elevation: 236,
 
     site: {
-      mothPresence: "POL+OBS",
+      moths: ["POL","OBS"],
       morphologicalData: false,
       scentData: false
     },
@@ -100,7 +102,7 @@
     elevation: 300,
 
     site: {
-      mothPresence: "POL",
+      moths: ["POL"],
       morphologicalData: false,
       scentData: false
     },
@@ -119,7 +121,7 @@
     elevation: 227,
 
     site: {
-      mothPresence: "POL+OBS",
+      moths: ["POL","OBS"],
       morphologicalData: false,
       scentData: false
     },
@@ -138,7 +140,7 @@
     elevation: 627,
 
     site: {
-      mothPresence: "NA",
+      moths: [],
       morphologicalData: false,
       scentData: false
     },
@@ -157,7 +159,7 @@
     elevation: 321,
 
     site: {
-      mothPresence: "NA",
+      moths: [],
       morphologicalData: false,
       scentData: false
     },
@@ -177,7 +179,7 @@
     elevation: 525,
 
     site: {
-      mothPresence: "NA",
+      moths: [],
       morphologicalData: false,
       scentData: false
     },
@@ -197,7 +199,7 @@
     elevation: 329,
 
     site: {
-      mothPresence: "NA",
+      moths: [],
       morphologicalData: false,
       scentData: false
     },
@@ -217,7 +219,7 @@
     elevation: 836,
 
     site: {
-      mothPresence: "POL",
+      moths: ["POL"],
       morphologicalData: false,
       scentData: false
     },
@@ -236,7 +238,7 @@
     elevation: 730,
 
     site: {
-      mothPresence: "POL",
+      moths: ["POL"],
       morphologicalData: false,
       scentData: false
     },
@@ -262,6 +264,11 @@
   }
 ).addTo(map);
 
+allMarkers.push({
+  marker: marker,
+  population: pop
+});
+
   marker.bindPopup(`
   <div class="popup-title">${pop.name}</div>
 
@@ -273,9 +280,14 @@
   </div>
 
   <div class="popup-section">
-    <div class="popup-label">Moth presence</div>
-    ${pop.site.mothPresence}
-  </div>
+  <div class="popup-label">Moth presence</div>
+
+  ${
+    pop.site.moths.length > 0
+      ? pop.site.moths.join(", ")
+      : "None"
+  }
+</div>
 
   <div class="popup-section">
     <div class="popup-label">Sequencing</div>
@@ -316,3 +328,62 @@ marker.on("popupclose", () => {
 });
 
 });
+
+
+
+function updateFilters() {
+
+  const showPOL =
+    document.getElementById("filterPOL").checked;
+
+  const showOBS =
+    document.getElementById("filterOBS").checked;
+
+  const mode =
+    document.querySelector('input[name="mothMode"]:checked').value;
+
+  allMarkers.forEach(entry => {
+
+    const pop = entry.population;
+    const marker = entry.marker;
+
+    const hasPOL = pop.site.moths.includes("POL");
+    const hasOBS = pop.site.moths.includes("OBS");
+
+    let visible = true;
+
+    // if no filters selected → show everything
+    if (showPOL || showOBS) {
+
+      if (mode === "or") {
+
+        // OR logic: at least one match
+        visible =
+          (showPOL && hasPOL) ||
+          (showOBS && hasOBS);
+
+      }
+
+      if (mode === "and") {
+
+        // AND logic: must satisfy all selected filters
+
+        if (showPOL && !hasPOL) visible = false;
+        if (showOBS && !hasOBS) visible = false;
+      }
+    }
+
+    if (visible) {
+      marker.addTo(map);
+    } else {
+      marker.remove();
+    }
+
+  });
+
+}
+
+document
+  .querySelectorAll('input[name="mothMode"]')
+  .forEach(el => el.addEventListener("change", updateFilters));
+

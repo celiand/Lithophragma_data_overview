@@ -2,27 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+      <title>Population Map</title>
+      
+        <!-- Leaflet CSS -->
+          <link
+              rel="stylesheet"
+                  href="https://unpkg.com/leaflet/dist/leaflet.css"
+                    />
+                    
+                       <link rel="stylesheet" href="main_style.css">
+                       </head>
+                       
+                       <body>
+<div id="controls">
 
-  <title>Population Map</title>
+  <h4>Moth filter mode</h4>
 
-  <!-- Leaflet CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet/dist/leaflet.css"
-  />
+  <label>
+    <input type="radio" name="mothMode" value="or" checked>
+    OR (any match)
+  </label>
 
-   <link rel="stylesheet" href="main_style.css">
-</head>
+  <label>
+    <input type="radio" name="mothMode" value="and">
+    AND (must have all selected)
+  </label>
 
-<body>
+  <hr>
 
-<div id="map"></div>
+  <label>
+    <input type="checkbox" id="filterPOL">
+    POL
+  </label>
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <label>
+    <input type="checkbox" id="filterOBS">
+    OBS
+  </label>
 
-<script src="data_map.js"></script>
-
-</body>
-</html>
+</div>
+                    
+                       
+                       <div id="map"></div>
+                       
+                       <!-- Leaflet JS -->
+                       <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+                       
+                       <script src="data_map.js"></script>
+                       
+                       </body>
+                       </html>

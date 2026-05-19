@@ -32,3 +32,22 @@ body {
 .popup-label {
   font-weight: bold;
 }
+
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+
+  background: white;
+  padding: 10px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#controls label {
+  display: block;
+  margin-bottom: 5px;
+}
