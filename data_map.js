@@ -384,6 +384,15 @@ function updateFilters() {
 }
 
 document
-  .querySelectorAll('input[name="mothMode"]')
-  .forEach(el => el.addEventListener("change", updateFilters));
+  .getElementById("filterPOL")
+  .addEventListener("change", updateFilters);
 
+document
+  .getElementById("filterOBS")
+  .addEventListener("change", updateFilters);
+
+document
+  .querySelectorAll('input[name="mothMode"]')
+  .forEach(el =>
+    el.addEventListener("change", updateFilters)
+  );
