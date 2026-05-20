@@ -32,7 +32,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 10,
+      diploid_BOL: 0,
       tetraploid_BOL: 0
     }
   },
@@ -51,8 +51,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      hexaploid_BOL: 1,
     }
   },
 
@@ -70,8 +69,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      hexaploid_BOL: 1,
     }
   },
 
@@ -127,8 +125,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      hexaploid_BOL: 1,
     }
   },
 
@@ -225,8 +222,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      diploid_BOL: 4,
     }
   },
 
@@ -455,8 +451,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      tetraploid_BOL: 1,
     }
   },
 
@@ -474,8 +469,8 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      diploid_BOL: 4,
+      tetraploid_BOL: 1
     }
   },
 
@@ -532,8 +527,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      tetraploid_BOL: 1,
     }
   },
 
@@ -627,8 +621,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      tetraploid_BOL: 1,
     }
   },
 
@@ -685,8 +678,8 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      diploid_BOL: 4,
+      tetraploid_BOL: 1
     }
   },
 
@@ -743,8 +736,8 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      tetraploid_BOL: 1,
+      hexaploid_BOL: 1,
     }
   },
 
@@ -820,8 +813,7 @@
     },
 
     sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
+      diploid_GLA:4,
     }
   },
 
@@ -898,6 +890,14 @@ allMarkers.push({
     <div>Morphological: ${pop.site.morphologicalData ? "Yes" : "No"}</div>
     <div>Scent: ${pop.site.scentData ? "Yes" : "No"}</div>
   </div>
+
+  ${
+  pop.id === "SMR"
+    ? `<div class="popup-section popup-highlight">
+         <strong>Reference genome (diploid)</strong>
+       </div>`
+    : ""
+}
 
   <div class="popup-section" style="font-size:11px; color:#666;">
     * POL = G. politella ; OBS = G. obscura<br>

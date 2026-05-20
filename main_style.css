@@ -50,3 +50,12 @@ body {
   display: block;
   margin-bottom: 5px;
 }
+
+
+.popup-highlight {
+  background: #f5f7ff;
+  border-left: 4px solid #4a6cf7;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
