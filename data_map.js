@@ -1,6 +1,6 @@
 
   // Create map
-  const map = L.map('map').setView([40, -120], 7);
+  const map = L.map('map').setView([37, -120], 7);
 
   // Add OpenStreetMap tiles
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -639,6 +639,198 @@
     lat: 36.521,
     lon: -118.894,
     elevation: 477,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "KAW",
+    name: "Kaweah",
+    lat: 36.484,
+    lon: -118.920,
+    elevation: 345,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "MIN",
+    name: "Mineral King Road, Sequoia",
+    lat: 36.459,
+    lon: -118.829,
+    elevation: 673,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "TRV",
+    name: "Three Rivers",
+    lat: 36.411,
+    lon: -118.894,
+    elevation: 300,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+
+  {
+    id: "SEQ",
+    name: "South Fork Kaweah River Road, Sequoia",
+    lat: 36.351,
+    lon: -118.769,
+    elevation: 1080,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "BAT",
+    name: "Battle Mountain",
+    lat: 36.263,
+    lon: -118.762,
+    elevation: 996,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+
+  {
+    id: "YOK",
+    name: "Yokohl Road, above Yokohl Valley",
+    lat: 36.231,
+    lon: -118.864,
+    elevation: 655,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "WOO",
+    name: "Woody",
+    lat: 35.720,
+    lon: -118.798,
+    elevation: 740,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "SCP",
+    name: "Santa Cruz Island, Prisoner's Harbor",
+    lat: 34.020,
+    lon: -119.689,
+    elevation: 62,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "POR",
+    name: "Portola",
+    lat: 39.815,
+    lon: -120.404,
+    elevation: 1495,
+
+    site: {
+      moths: [],
+      morphologicalData: false,
+      scentData: false
+    },
+
+    sequencing: {
+      diploid_BOL: 0,
+      tetraploid_BOL: 0
+    }
+  },
+
+  {
+    id: "QRG",
+    name: "Quail Ridge",
+    lat: 38.494,
+    lon: -122.150,
+    elevation: 166,
 
     site: {
       moths: [],
