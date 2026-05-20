@@ -978,11 +978,12 @@ function updateFilters() {
 
     if (visible) {
 
-  let color = defaultColor;
+let color = defaultColor;
 
-  if (mode === "or") {
-    color = getMothColor(pop, showPOL, showOBS);
-  }
+// color when OR + BOTH filters checked
+if (mode === "or" && showPOL && showOBS) {
+  color = getMothColor(pop);
+}
 
   marker.setStyle({
     color: color,
@@ -999,7 +1000,7 @@ function updateFilters() {
 
   const legend = document.getElementById("legend");
 
-if (mode === "or" && (showPOL || showOBS)) {
+if (mode === "or" && showPOL && showOBS) {
   legend.classList.remove("hidden");
 } else {
   legend.classList.add("hidden");
@@ -1022,7 +1023,7 @@ document
   );
 
 
-function getMothColor(pop, showPOL, showOBS) {
+function getMothColor(pop) {
 
   const hasPOL = pop.site.moths.includes("POL");
   const hasOBS = pop.site.moths.includes("OBS");
