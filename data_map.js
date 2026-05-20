@@ -992,3 +992,10 @@ document
   .forEach(el =>
     el.addEventListener("change", updateFilters)
   );
+
+
+  // loading issue
+
+  setTimeout(() => {
+  map.invalidateSize();
+}, 100);
