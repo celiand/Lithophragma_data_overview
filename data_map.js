@@ -925,7 +925,14 @@ marker.on("popupclose", () => {
 
 });
 
+//filter part - moth
+const mothColors = {
+  POL: "#eaa91eef",
+  OBS: "#148b48f0",
+  BOTH: "#82114a"
+};
 
+const defaultColor = "#3388ff";
 
 function updateFilters() {
 
@@ -970,12 +977,33 @@ function updateFilters() {
     }
 
     if (visible) {
-      marker.addTo(map);
-    } else {
-      marker.remove();
-    }
+
+  let color = defaultColor;
+
+  if (mode === "or") {
+    color = getMothColor(pop, showPOL, showOBS);
+  }
+
+  marker.setStyle({
+    color: color,
+    fillColor: color
+  });
+
+  marker.addTo(map);
+
+} else {
+  marker.remove();
+}
 
   });
+
+  const legend = document.getElementById("legend");
+
+if (mode === "or" && (showPOL || showOBS)) {
+  legend.classList.remove("hidden");
+} else {
+  legend.classList.add("hidden");
+}
 
 }
 
@@ -993,6 +1021,18 @@ document
     el.addEventListener("change", updateFilters)
   );
 
+
+function getMothColor(pop, showPOL, showOBS) {
+
+  const hasPOL = pop.site.moths.includes("POL");
+  const hasOBS = pop.site.moths.includes("OBS");
+
+  if (hasPOL && hasOBS) return mothColors.BOTH;
+  if (hasPOL) return mothColors.POL;
+  if (hasOBS) return mothColors.OBS;
+
+  return defaultColor;
+}
 
   // loading issue
 

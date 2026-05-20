@@ -59,3 +59,31 @@ body {
   border-radius: 6px;
   margin-top: 8px;
 }
+
+.legend {
+  position: absolute;
+  top: 10px;
+  right: 200px; /* next to filter box */
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 12px;
+  z-index: 1000;
+}
+
+.legend.hidden {
+  display: none;
+}
+
+.legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.legend .pol { background: #eaa91eef; }
+.legend .obs { background: #148b48f0; }
+.legend .both { background: #82114a; }
