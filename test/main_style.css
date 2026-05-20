@@ -64,7 +64,7 @@ body {
   position: absolute;
   top: 10px;
 
-  right: calc(10px + 220px);
+  right: calc(10px + 260px);
 
   background: white;
   padding: 10px;
@@ -91,3 +91,14 @@ body {
 .legend .pol { background: #eaa91eef; }
 .legend .obs { background: #148b48f0; }
 .legend .both { background: #82114a; }
+
+.search-box {
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

@@ -1006,6 +1006,9 @@ if (mode === "or" && showPOL && showOBS) {
   legend.classList.add("hidden");
 }
 
+//update search among the filtered pop
+updateSearchHighlight();
+
 }
 
 document
@@ -1033,6 +1036,56 @@ function getMothColor(pop) {
   if (hasOBS) return mothColors.OBS;
 
   return defaultColor;
+}
+
+// search logic
+
+let searchQuery = "";
+
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  searchQuery = e.target.value.toLowerCase();
+  updateSearchHighlight();
+});
+
+function updateSearchHighlight() {
+
+  allMarkers.forEach(entry => {
+
+    const pop = entry.population;
+    const marker = entry.marker;
+
+    const match =
+      pop.id.toLowerCase().includes(searchQuery) ||
+      pop.name.toLowerCase().includes(searchQuery);
+
+    if (searchQuery === "") {
+
+      // reset style if empty search
+      marker.setStyle({
+        opacity: 1,
+        fillOpacity: 0.9
+      });
+
+    } else if (match) {
+
+      // highlight match
+      marker.setStyle({
+        opacity: 1,
+        fillOpacity: 1,
+        weight: 4
+      });
+
+      marker.bringToFront();
+
+    } else {
+
+      // dim non-matching
+      marker.setStyle({
+        opacity: 0.3,
+        fillOpacity: 0.2
+      });
+    }
+  });
 }
 
   // loading issue
