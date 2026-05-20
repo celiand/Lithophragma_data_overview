@@ -1058,34 +1058,39 @@ function updateSearchHighlight() {
       pop.id.toLowerCase().includes(searchQuery) ||
       pop.name.toLowerCase().includes(searchQuery);
 
+    // 🧼 ALWAYS reset to base first
+    let style = getBaseStyle();
+
     if (searchQuery === "") {
+      // no search → normal state
+      marker.setStyle(style);
+      return;
+    }
 
-      // reset style if empty search
-      marker.setStyle({
-        opacity: 1,
-        fillOpacity: 0.9
-      });
-
-    } else if (match) {
-
+    if (match) {
       // highlight match
-      marker.setStyle({
-        opacity: 1,
-        fillOpacity: 1,
-        weight: 4
-      });
+      style.weight = 4;
+      style.opacity = 1;
+      style.fillOpacity = 1;
 
       marker.bringToFront();
-
     } else {
-
       // dim non-matching
-      marker.setStyle({
-        opacity: 0.3,
-        fillOpacity: 0.2
-      });
+      style.opacity = 0.3;
+      style.fillOpacity = 0.2;
     }
+
+    marker.setStyle(style);
   });
+}
+
+function getBaseStyle() {
+  return {
+    color: "#222",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.9
+  };
 }
 
   // loading issue
