@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Individuals Table</title>
+
+</head>
+
+<body>
+
+<a class="back" href="index.html">← Back to map</a>
+
+<!-- ===================== -->
+<!-- POPULATION 1 -->
+<!-- ===================== -->
+
+<h2 id="BAM">Bald Mountain (BAM)</h2>
+
+<table>
+  <tr>
+    <th>Individual ID</th>
+    <th>Population</th>
+    <th>Species</th>
+    <th>Ploidy</th>
+    <th>Sequencing type</th>
+    <th>Sequence file ID</th>
+    <th>Path</th>
+    <th>Notes</th>
+  </tr>
+
+  <tr>
+    <td>13198A</td>
+    <td>Bald Mountain (BAM)</td>
+    <td>BOL</td>
+    <td>Diploid</td>
+    <td>short reads</td>
+    <td>P18758_101</td>
+    <td>—</td>
+    <td>Coverage:20.0943</td>
+  </tr>
+
+  <tr>
+    <td>13184A</td>
+    <td>Bald Mountain (BAM)</td>
+    <td>BOL</td>
+    <td>Diploid</td>
+    <td>short reads</td>
+    <td>P18758_102</td>
+    <td>—</td>
+    <td>Coverage:20.2138</td>
+  </tr>
+
+  <tr>
+    <td>13180A</td>
+    <td>Bald Mountain (BAM)</td>
+    <td>BOL</td>
+    <td>Diploid</td>
+    <td>short reads</td>
+    <td>P18758_103</td>
+    <td>—</td>
+    <td>Coverage:20.2858</td>
+  </tr>
+
+<tr>
+    <td>966A</td>
+    <td>Hopland (HOP)</td>
+    <td>BOL</td>
+    <td>Hexaploid</td>
+    <td>short reads</td>
+    <td>P18758_178</td>
+    <td>—</td>
+    <td>Coverage:67.6427</td>
+  </tr>
+
+
+</table>
+
+<script>
+  const version = Date.now();
+
+  // load CSS
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = `individuals.css?v=${version}`;
+  document.head.appendChild(css);
+</script>
+
+</body>
+</html>
