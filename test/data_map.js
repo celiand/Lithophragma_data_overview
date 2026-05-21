@@ -8,6 +8,7 @@
   }).addTo(map);
 
   const allMarkers = [];
+  const defaultColor = "#3388ff";
 
   //name mapping
   const sequencingLabels = {
@@ -946,7 +947,7 @@ const mothColors = {
   BOTH: "#82114a"
 };
 
-const defaultColor = "#3388ff";
+
 
 function updateFilters() {
 
