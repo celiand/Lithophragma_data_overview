@@ -23,15 +23,16 @@ body {
   margin-bottom: 6px;
 }
 
-.linkpopuptitle{
-  color:#222;
+a.linkpopuptitle,
+a.linkpopuptitle:visited,
+a.linkpopuptitle:hover,
+a.linkpopuptitle:active {
+  color: #222;
+  text-decoration: none;
 }
-.linkpopuptitle:hover{
-  color:#222;
-  cursor:pointer;
-}
-.linkpopuptitle:visited{
-  color:#222;
+
+a.linkpopuptitle:hover {
+  cursor: pointer;
 }
 
 .popup-section {

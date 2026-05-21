@@ -8,6 +8,7 @@
   }).addTo(map);
 
   const allMarkers = [];
+  const defaultColor = "#3388ff";
 
   //name mapping
   const sequencingLabels = {
@@ -852,13 +853,31 @@
   }
 ).addTo(map);
 
-allMarkers.push({
+const entry = {
+
   marker: marker,
-  population: pop
-});
+  population: pop,
+
+  state: {
+    visible: true,
+
+    popupOpen: false,
+
+    searchMatch: true,
+
+    mothColorMode: false,
+    mothColor: defaultColor
+  }
+};
+
+allMarkers.push(entry);
 
   marker.bindPopup(`
-  <div class="popup-title">${pop.name}</div>
+  <div class="popup-title">
+  <a class="linkpopuptitle" href="individuals.html#${pop.id}">
+    ${pop.name}
+  </a>
+</div>
 
   <div class="popup-section">
     <div><span class="popup-label">ID:</span> ${pop.id}</div>
@@ -905,21 +924,20 @@ allMarkers.push({
   </div>
 `);
 
+
 marker.on("popupopen", () => {
 
-  marker.setStyle({
-    radius: 12,
-    weight: 4
-  });
+  entry.state.popupOpen = true;
+
+  renderMarker(entry);
 
 });
 
 marker.on("popupclose", () => {
 
-  marker.setStyle({
-    radius: 7,
-    weight: 1
-  });
+  entry.state.popupOpen = false;
+
+  renderMarker(entry);
 
 });
 
@@ -932,7 +950,7 @@ const mothColors = {
   BOTH: "#82114a"
 };
 
-const defaultColor = "#3388ff";
+
 
 function updateFilters() {
 
@@ -976,25 +994,19 @@ function updateFilters() {
       }
     }
 
-    if (visible) {
+    entry.state.visible = visible;
 
-let color = defaultColor;
+// activate special color mode only in this case
+entry.state.mothColorMode =
+  (mode === "or" && showPOL && showOBS);
 
-// color when OR + BOTH filters checked
-if (mode === "or" && showPOL && showOBS) {
-  color = getMothColor(pop);
-}
+// compute moth color
+entry.state.mothColor =
+  entry.state.mothColorMode
+    ? getMothColor(pop)
+    : defaultColor;
 
-  marker.setStyle({
-    color: color,
-    fillColor: color
-  });
-
-  marker.addTo(map);
-
-} else {
-  marker.remove();
-}
+renderMarker(entry);
 
   });
 
@@ -1005,6 +1017,9 @@ if (mode === "or" && showPOL && showOBS) {
 } else {
   legend.classList.add("hidden");
 }
+
+//update search among the filtered pop
+updateSearchHighlight();
 
 }
 
@@ -1033,6 +1048,130 @@ function getMothColor(pop) {
   if (hasOBS) return mothColors.OBS;
 
   return defaultColor;
+}
+
+// search logic
+
+let searchQuery = "";
+
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  searchQuery = e.target.value.toLowerCase();
+  updateSearchHighlight();
+});
+
+function updateSearchHighlight() {
+
+  allMarkers.forEach(entry => {
+
+    const pop = entry.population;
+
+    entry.state.searchMatch =
+      searchQuery === "" ||
+
+      pop.id.toLowerCase().includes(searchQuery) ||
+
+      pop.name.toLowerCase().includes(searchQuery);
+
+    renderMarker(entry);
+
+  });
+
+}
+
+
+
+//centralized style function
+
+function renderMarker(entry) {
+
+  const marker = entry.marker;
+  const state = entry.state;
+
+  // =========================
+  // VISIBILITY
+  // =========================
+
+  if (state.visible) {
+
+    marker.addTo(map);
+
+  } else {
+
+    marker.remove();
+
+    return;
+  }
+
+  // =========================
+  // BASE STYLE
+  // =========================
+
+  let style = {
+
+    radius: 7,
+
+    color: "#222",
+
+    fillColor: defaultColor,
+
+    weight: 1,
+
+    opacity: 1,
+
+    fillOpacity: 0.9
+  };
+
+  // =========================
+  // MOTH COLOR MODE
+  // =========================
+
+  if (state.mothColorMode) {
+
+    style.fillColor = state.mothColor;
+
+  }
+
+  // =========================
+  // SEARCH EFFECT
+  // =========================
+
+  if (searchQuery !== "") {
+
+    if (state.searchMatch) {
+
+      style.weight = 4;
+
+      style.opacity = 1;
+
+      style.fillOpacity = 1;
+
+      marker.bringToFront();
+
+    } else {
+
+      style.opacity = 0.3;
+
+      style.fillOpacity = 0.2;
+    }
+  }
+
+  // =========================
+  // POPUP EFFECT
+  // =========================
+
+  if (state.popupOpen) {
+
+    style.radius = 12;
+
+    style.weight = 4;
+  }
+
+  // =========================
+  // APPLY STYLE
+  // =========================
+
+  marker.setStyle(style);
+
 }
 
   // loading issue
