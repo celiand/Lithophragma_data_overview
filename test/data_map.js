@@ -853,7 +853,8 @@
   }
 ).addTo(map);
 
-allMarkers.push({
+const entry = {
+
   marker: marker,
   population: pop,
 
@@ -867,7 +868,9 @@ allMarkers.push({
     mothColorMode: false,
     mothColor: defaultColor
   }
-});
+};
+
+allMarkers.push(entry);
 
   marker.bindPopup(`
   <div class="popup-title">
