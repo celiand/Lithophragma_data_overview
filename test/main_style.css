@@ -23,6 +23,17 @@ body {
   margin-bottom: 6px;
 }
 
+.linkpopuptitle{
+  color:#222;
+}
+.linkpopuptitle:hover{
+  color:#222;
+  cursor:pointer;
+}
+.linkpopuptitle:visited{
+  color:#222;
+}
+
 .popup-section {
   margin-top: 8px;
   padding-top: 6px;

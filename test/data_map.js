@@ -859,7 +859,7 @@ allMarkers.push({
 
   marker.bindPopup(`
   <div class="popup-title">
-  <a href="individuals.html#${pop.id}">
+  <a class="linkpopuptitle" href="individuals.html#${pop.id}">
     ${pop.name}
   </a>
 </div>
