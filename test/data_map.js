@@ -854,7 +854,18 @@
 
 allMarkers.push({
   marker: marker,
-  population: pop
+  population: pop,
+
+  state: {
+    visible: true,
+
+    popupOpen: false,
+
+    searchMatch: true,
+
+    mothColorMode: false,
+    mothColor: defaultColor
+  }
 });
 
   marker.bindPopup(`
@@ -909,21 +920,20 @@ allMarkers.push({
   </div>
 `);
 
+
 marker.on("popupopen", () => {
 
-  marker.setStyle({
-    radius: 12,
-    weight: 4
-  });
+  entry.state.popupOpen = true;
+
+  renderMarker(entry);
 
 });
 
 marker.on("popupclose", () => {
 
-  marker.setStyle({
-    radius: 7,
-    weight: 1
-  });
+  entry.state.popupOpen = false;
+
+  renderMarker(entry);
 
 });
 
@@ -980,25 +990,19 @@ function updateFilters() {
       }
     }
 
-    if (visible) {
+    entry.state.visible = visible;
 
-let color = defaultColor;
+// activate special color mode only in this case
+entry.state.mothColorMode =
+  (mode === "or" && showPOL && showOBS);
 
-// color when OR + BOTH filters checked
-if (mode === "or" && showPOL && showOBS) {
-  color = getMothColor(pop);
-}
+// compute moth color
+entry.state.mothColor =
+  entry.state.mothColorMode
+    ? getMothColor(pop)
+    : defaultColor;
 
-  marker.setStyle({
-    color: "#222",
-    fillColor: color
-  });
-
-  marker.addTo(map);
-
-} else {
-  marker.remove();
-}
+renderMarker(entry);
 
   });
 
@@ -1056,45 +1060,114 @@ function updateSearchHighlight() {
   allMarkers.forEach(entry => {
 
     const pop = entry.population;
-    const marker = entry.marker;
 
-    const match =
+    entry.state.searchMatch =
+      searchQuery === "" ||
+
       pop.id.toLowerCase().includes(searchQuery) ||
+
       pop.name.toLowerCase().includes(searchQuery);
 
-    // 🧼 ALWAYS reset to base first
-    let style = getBaseStyle();
+    renderMarker(entry);
 
-    if (searchQuery === "") {
-      // no search → normal state
-      marker.setStyle(style);
-      return;
-    }
+  });
 
-    if (match) {
-      // highlight match
+}
+
+
+
+//centralized style function
+
+function renderMarker(entry) {
+
+  const marker = entry.marker;
+  const state = entry.state;
+
+  // =========================
+  // VISIBILITY
+  // =========================
+
+  if (state.visible) {
+
+    marker.addTo(map);
+
+  } else {
+
+    marker.remove();
+
+    return;
+  }
+
+  // =========================
+  // BASE STYLE
+  // =========================
+
+  let style = {
+
+    radius: 7,
+
+    color: "#222",
+
+    fillColor: defaultColor,
+
+    weight: 1,
+
+    opacity: 1,
+
+    fillOpacity: 0.9
+  };
+
+  // =========================
+  // MOTH COLOR MODE
+  // =========================
+
+  if (state.mothColorMode) {
+
+    style.fillColor = state.mothColor;
+
+  }
+
+  // =========================
+  // SEARCH EFFECT
+  // =========================
+
+  if (searchQuery !== "") {
+
+    if (state.searchMatch) {
+
       style.weight = 4;
+
       style.opacity = 1;
+
       style.fillOpacity = 1;
 
       marker.bringToFront();
+
     } else {
-      // dim non-matching
+
       style.opacity = 0.3;
+
       style.fillOpacity = 0.2;
     }
+  }
 
-    marker.setStyle(style);
-  });
-}
+  // =========================
+  // POPUP EFFECT
+  // =========================
 
-function getBaseStyle() {
-  return {
-    color: "#222",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.9
-  };
+  if (state.popupOpen) {
+
+    style.radius = 12;
+
+    style.weight = 4;
+  }
+
+  // =========================
+  // APPLY STYLE
+  // =========================
+
+  marker.setStyle(style);
+
 }
 
   // loading issue
