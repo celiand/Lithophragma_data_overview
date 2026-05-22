@@ -35,7 +35,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -53,7 +69,23 @@
 
     sequencing: {
       hexaploid_BOL: 1,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -71,7 +103,23 @@
 
     sequencing: {
       hexaploid_BOL: 1,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
    {
@@ -90,7 +138,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -109,7 +173,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
    {
@@ -127,7 +207,23 @@
 
     sequencing: {
       hexaploid_BOL: 1,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -146,7 +242,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -165,7 +277,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   
@@ -185,7 +313,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   
@@ -205,7 +349,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
    
@@ -224,7 +384,23 @@
 
     sequencing: {
       diploid_BOL: 4,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
    {
@@ -243,7 +419,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -262,7 +454,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -281,7 +489,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -306,10 +530,39 @@
       "Along the south-facing slope of the South Fork of the Merced River within the first 2 km upstream of its confluence with the Merced River. This habitat is drier and sunnier and dominated by a diverse mix of perennial herbs, shrubs, and trees."
   ],
 
+  
   literature: [
-    "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M. (2025). Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae). Proceedings of the National Academy of Sciences, 122(33), e2505119122.",
-    "Gross, K., Undin, M., Thompson, J. N., & Friberg, M. (2023). Components of local adaptation and divergence in pollination efficacy in a coevolving species interaction. Ecology, 104(6), e4043.",
-    "Thompson, J. N., Schwind, C., & Friberg, M. (2017). Diversification of trait combinations in coevolving plant and insect lineages. The American Naturalist, 190(2), 171-184."
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  },
+{
+    authors:
+      "Gross, K., Undin, M., Thompson, J. N., & Friberg, M.",
+
+    title:
+      "Components of local adaptation and divergence in pollination efficacy in a coevolving species interaction",
+
+    url:
+      "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.4043"
+  },
+
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
   ]
 
   },
@@ -330,7 +583,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -349,7 +618,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -368,7 +653,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -387,7 +688,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   
@@ -407,7 +724,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   
@@ -427,7 +760,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -446,7 +795,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -464,7 +829,23 @@
 
     sequencing: {
       tetraploid_BOL: 1,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -483,7 +864,23 @@
     sequencing: {
       diploid_BOL: 4,
       tetraploid_BOL: 1
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
    {
@@ -502,7 +899,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -521,7 +934,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
 
@@ -540,7 +969,23 @@
 
     sequencing: {
       tetraploid_BOL: 1,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -559,7 +1004,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -578,7 +1039,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -597,7 +1074,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -616,7 +1109,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -628,13 +1137,51 @@
 
     site: {
       moths: ["POL"],
-      morphologicalData: false,
+      morphologicalData: true,
       scentData: false
     },
 
     sequencing: {
       tetraploid_BOL: 1,
-    }
+    },
+
+    notes: [
+      "The habitat is a shaded slope, covered in oak (Quercus spp.), buckeye (Aesculus californica), and redbud (Cercis occidentalis). There are thousands of L. bolanderi individuals, and G. politella is comparatively abundant relative to other populations"
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  },
+{
+    authors:
+      "Gross, K., Undin, M., Thompson, J. N., & Friberg, M.",
+
+    title:
+      "Components of local adaptation and divergence in pollination efficacy in a coevolving species interaction",
+
+    url:
+      "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.4043"
+  },
+
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+  ]
   },
 
 
@@ -654,7 +1201,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -673,7 +1236,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -692,7 +1271,23 @@
     sequencing: {
       diploid_BOL: 4,
       tetraploid_BOL: 1
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -711,7 +1306,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
 
@@ -731,7 +1342,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -750,7 +1377,23 @@
     sequencing: {
       tetraploid_BOL: 1,
       hexaploid_BOL: 1,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
 
@@ -770,7 +1413,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -789,7 +1448,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
@@ -808,7 +1483,23 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+  ]
   },
 
   {
