@@ -293,14 +293,25 @@
 
     site: {
       moths: ["POL","OBS"],
-      morphologicalData: false,
+      morphologicalData: true,
       scentData: false
     },
 
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+      "Along the south-facing slope of the South Fork of the Merced River within the first 2 km upstream of its confluence with the Merced River. This habitat is drier and sunnier and dominated by a diverse mix of perennial herbs, shrubs, and trees."
+  ],
+
+  literature: [
+    "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M. (2025). Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae). Proceedings of the National Academy of Sciences, 122(33), e2505119122.",
+    "Gross, K., Undin, M., Thompson, J. N., & Friberg, M. (2023). Components of local adaptation and divergence in pollination efficacy in a coevolving species interaction. Ecology, 104(6), e4043.",
+    "Thompson, J. N., Schwind, C., & Friberg, M. (2017). Diversification of trait combinations in coevolving plant and insect lineages. The American Naturalist, 190(2), 171-184."
+  ]
+
   },
 
   {
@@ -815,7 +826,14 @@
 
     sequencing: {
       diploid_GLA:4,
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+    "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M. (2025). Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae). Proceedings of the National Academy of Sciences, 122(33), e2505119122. https://www.pnas.org/doi/abs/10.1073/pnas.2505119122",
+  ]
   },
 
   {
@@ -834,7 +852,15 @@
     sequencing: {
       diploid_BOL: 0,
       tetraploid_BOL: 0
-    }
+    },
+
+    notes: [
+  ],
+
+  literature: [
+    "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M. (2025). Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae). Proceedings of the National Academy of Sciences, 122(33), e2505119122. https://www.pnas.org/doi/abs/10.1073/pnas.2505119122 ",
+  ]
+
   },
 
 ];
@@ -909,6 +935,34 @@ allMarkers.push(entry);
     <div>Morphological: ${pop.site.morphologicalData ? "Yes" : "No"}</div>
     <div>Scent: ${pop.site.scentData ? "Yes" : "No"}</div>
   </div>
+
+  ${
+  pop.notes && pop.notes.length > 0
+    ? `
+      <div class="popup-section">
+        <div class="popup-label">Notes</div>
+
+        ${pop.notes
+          .map(note => `<div>• ${note}</div>`)
+          .join("")}
+      </div>
+    `
+    : ""
+}
+
+${
+  pop.literature && pop.literature.length > 0
+    ? `
+      <div class="popup-section">
+        <div class="popup-label">Literature</div>
+
+        ${pop.literature
+          .map(ref => `<div>• ${ref}</div>`)
+          .join("")}
+      </div>
+    `
+    : ""
+}
 
   ${
   pop.id === "SMR"
