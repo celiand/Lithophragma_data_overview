@@ -114,3 +114,40 @@ a.linkpopuptitle:hover {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+.literature-entry {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+}
+
+.lit-authors,
+.lit-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lit-authors {
+  font-size: 11px;
+  color: #666;
+}
+
+.lit-title {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.lit-link {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+.lit-link a {
+  color: #3388ff;
+  text-decoration: none;
+}
+
+.lit-link a:hover {
+  text-decoration: underline;
+}

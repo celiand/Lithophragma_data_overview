@@ -832,7 +832,16 @@
   ],
 
   literature: [
-    "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M. (2025). Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae). Proceedings of the National Academy of Sciences, 122(33), e2505119122. https://www.pnas.org/doi/abs/10.1073/pnas.2505119122",
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
   ]
   },
 
@@ -858,8 +867,17 @@
   ],
 
   literature: [
-    "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M. (2025). Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae). Proceedings of the National Academy of Sciences, 122(33), e2505119122. https://www.pnas.org/doi/abs/10.1073/pnas.2505119122 ",
-  ]
+  {
+    authors:
+      "Gross, K., Yazdi, H. P., Schlager, E., Lilley, J., Romero-Bravo, A., Runemark, A., ... & Friberg, M.",
+
+    title:
+      "Repeated polyploidization shapes divergence in floral morphology in Lithophragma bolanderi (Saxifragaceae)",
+
+    url:
+      "https://www.pnas.org/doi/abs/10.1073/pnas.2505119122"
+  }
+]
 
   },
 
@@ -956,9 +974,28 @@ ${
       <div class="popup-section">
         <div class="popup-label">Literature</div>
 
-        ${pop.literature
-          .map(ref => `<div>• ${ref}</div>`)
-          .join("")}
+        ${pop.literature.map(ref => `
+
+          <div class="literature-entry">
+
+            <div class="lit-authors">
+              ${ref.authors}
+            </div>
+
+            <div class="lit-title">
+              ${ref.title}
+            </div>
+
+            <div class="lit-link">
+              <a href="${ref.url}" target="_blank">
+                View article
+              </a>
+            </div>
+
+          </div>
+
+        `).join("")}
+
       </div>
     `
     : ""
