@@ -1727,7 +1727,7 @@
     name: "Dog Creek",
     lat: 42.36,
     lon: -122.36,
-    elevation: NA,
+    elevation: -1000,
 
     site: {
       moths: [],
@@ -1797,128 +1797,128 @@ const entry = {
 allMarkers.push(entry);
 
   marker.bindPopup(`
-  <div class="popup-title">
-  <a class="linkpopuptitle" href="individuals.html#${pop.id}">
-    ${pop.name}
-  </a>
-</div>
-
-  <div class="popup-section">
-    <div><span class="popup-label">ID:</span> ${pop.id}</div>
-    <div><span class="popup-label">Lat:</span> ${pop.lat}</div>
-    <div><span class="popup-label">Lon:</span> ${pop.lon}</div>
-    <div><span class="popup-label">Elevation:</span> ${pop.elevation} m</div>
-  </div>
-
-  <div class="popup-section">
-  <div class="popup-label">Moth presence</div>
-
-  ${
-    pop.site.moths.length > 0
-      ? pop.site.moths.join(", ")
-      : "None"
-  }
-</div>
-
-<div class="popup-section">
-  <div class="popup-label">Lithophragma species</div>
-
-  ${Object.keys(pop.genetics)
-    .map(sp => `<div>${sp}</div>`)
-    .join("")}
-</div>
-
-  <div class="popup-section">
-  <div class="popup-label">Genetic data</div>
-
-  ${Object.entries(pop.genetics)
-    .map(([species, data]) => {
-
-      const ploidyStr = Object.entries(data.ploidy)
-        .filter(([_, count]) => count != null)
-        .map(([ploidy, count]) => {
-
-          // if no count or 0 → just ploidy
-          if (!count) return ploidy;
-
-          return `${ploidy} (${count})`;
-        })
-        .join(", ");
-
-      return `<div>
-        <strong>${species}:</strong> ${ploidyStr}
-      </div>`;
-    })
-    .join("")}
-</div>
-
-  <div class="popup-section">
-    <div class="popup-label">Phenotypic data</div>
-    <div>Morphological: ${pop.site.morphologicalData ? "Yes" : "No"}</div>
-    <div>Scent: ${pop.site.scentData ? "Yes" : "No"}</div>
-  </div>
-
-  ${
-  pop.notes && pop.notes.length > 0
-    ? `
-      <div class="popup-section">
-        <div class="popup-label">Notes</div>
-
-        ${pop.notes
-          .map(note => `<div>• ${note}</div>`)
-          .join("")}
-      </div>
-    `
-    : ""
-}
-
-${
-  pop.literature && pop.literature.length > 0
-    ? `
-      <div class="popup-section">
-        <div class="popup-label">Literature</div>
-
-        ${pop.literature.map(ref => `
-
-          <div class="literature-entry">
-
-            <div class="lit-authors">
-              ${ref.authors}
+    <div class="popup-title">
+      <a class="linkpopuptitle" href="individuals.html#${pop.id}">
+          ${pop.name}
+            </a>
             </div>
 
-            <div class="lit-title">
-              ${ref.title}
-            </div>
+              <div class="popup-section">
+                  <div><span class="popup-label">ID:</span> ${pop.id}</div>
+                      <div><span class="popup-label">Lat:</span> ${pop.lat}</div>
+                          <div><span class="popup-label">Lon:</span> ${pop.lon}</div>
+                              <div><span class="popup-label">Elevation:</span> ${pop.elevation} m</div>
+                                </div>
 
-            <div class="lit-link">
-              <a href="${ref.url}" target="_blank">
-                View article
-              </a>
-            </div>
+                                  <div class="popup-section">
+                                    <div class="popup-label">Moth presence</div>
 
-          </div>
+                                      ${
+                                          pop.site.moths.length > 0
+                                                ? pop.site.moths.join(", ")
+                                                      : "None"
+                                                        }
+                                                        </div>
 
-        `).join("")}
+                                                        <div class="popup-section">
+                                                          <div class="popup-label">Lithophragma species</div>
 
-      </div>
-    `
-    : ""
-}
+                                                            ${Object.keys(pop.genetics)
+                                                                .map(sp => `<div>${sp}</div>`)
+                                                                    .join("")}
+                                                                    </div>
 
-  ${
-  pop.id === "SMR"
-    ? `<div class="popup-section popup-highlight">
-         <strong>Reference genome (diploid)</strong>
-       </div>`
-    : ""
-}
+                                                                      <div class="popup-section">
+                                                                        <div class="popup-label">Genetic data</div>
 
-  <div class="popup-section" style="font-size:11px; color:#666;">
-    * POL = G. politella ; OBS = G. obscura<br>
-    ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine
-  </div>
-`);
+                                                                          ${Object.entries(pop.genetics)
+                                                                              .map(([species, data]) => {
 
+                                                                                    const ploidyStr = Object.entries(data.ploidy)
+                                                                                            .filter(([_, count]) => count != null)
+                                                                                                    .map(([ploidy, count]) => {
+
+                                                                                                              // if no count or 0 → just ploidy
+                                                                                                                        if (!count) return ploidy;
+
+                                                                                                                                  return `${ploidy} (${count})`;
+                                                                                                                                          })
+                                                                                                                                                  .join(", ");
+
+                                                                                                                                                        return `<div>
+                                                                                                                                                                <strong>${species}:</strong> ${ploidyStr}
+                                                                                                                                                                      </div>`;
+                                                                                                                                                                          })
+                                                                                                                                                                              .join("")}
+                                                                                                                                                                              </div>
+
+                                                                                                                                                                                <div class="popup-section">
+                                                                                                                                                                                    <div class="popup-label">Phenotypic data</div>
+                                                                                                                                                                                        <div>Morphological: ${pop.site.morphologicalData ? "Yes" : "No"}</div>
+                                                                                                                                                                                            <div>Scent: ${pop.site.scentData ? "Yes" : "No"}</div>
+                                                                                                                                                                                              </div>
+
+                                                                                                                                                                                                ${
+                                                                                                                                                                                                  pop.notes && pop.notes.length > 0
+                                                                                                                                                                                                      ? `
+                                                                                                                                                                                                            <div class="popup-section">
+                                                                                                                                                                                                                    <div class="popup-label">Notes</div>
+
+                                                                                                                                                                                                                            ${pop.notes
+                                                                                                                                                                                                                                      .map(note => `<div>• ${note}</div>`)
+                                                                                                                                                                                                                                                .join("")}
+                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                          `
+                                                                                                                                                                                                                                                              : ""
+                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                              ${
+                                                                                                                                                                                                                                                                pop.literature && pop.literature.length > 0
+                                                                                                                                                                                                                                                                    ? `
+                                                                                                                                                                                                                                                                          <div class="popup-section">
+                                                                                                                                                                                                                                                                                  <div class="popup-label">Literature</div>
+
+                                                                                                                                                                                                                                                                                          ${pop.literature.map(ref => `
+
+                                                                                                                                                                                                                                                                                                    <div class="literature-entry">
+
+                                                                                                                                                                                                                                                                                                                <div class="lit-authors">
+                                                                                                                                                                                                                                                                                                                              ${ref.authors}
+                                                                                                                                                                                                                                                                                                                                          </div>
+
+                                                                                                                                                                                                                                                                                                                                                      <div class="lit-title">
+                                                                                                                                                                                                                                                                                                                                                                    ${ref.title}
+                                                                                                                                                                                                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                            <div class="lit-link">
+                                                                                                                                                                                                                                                                                                                                                                                                          <a href="${ref.url}" target="_blank">
+                                                                                                                                                                                                                                                                                                                                                                                                                          View article
+                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      `).join("")}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                `
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    : ""
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ${
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        pop.id === "SMR"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ? `<div class="popup-section popup-highlight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <strong>Reference genome (diploid)</strong>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>`
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                : ""
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="popup-section" style="font-size:11px; color:#666;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * POL = G. politella ; OBS = G. obscura<br>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            `);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
 marker.on("popupopen", () => {
 
