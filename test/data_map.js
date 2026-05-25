@@ -10,12 +10,6 @@
   const allMarkers = [];
   const defaultColor = "#3388ff";
 
-  //name mapping
-  const sequencingLabels = {
-  diploid_BOL: "Diploid BOL",
-  tetraploid_BOL: "Tetraploid BOL",
-  hexaploid_BOL: "Hexaploid BOL"
-};
 
   // data
   const populations = [
@@ -32,10 +26,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+   genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 0
+    }
+  },
+},
 
     notes: [
   ],
@@ -67,9 +64,13 @@
       scentData: false
     },
 
-    sequencing: {
-      hexaploid_BOL: 1,
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 1
+    }
+  },
+},
 
     notes: [
   ],
@@ -101,9 +102,13 @@
       scentData: false
     },
 
-    sequencing: {
-      hexaploid_BOL: 1,
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 1
+    }
+  },
+},
 
     notes: [
   ],
@@ -135,10 +140,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 0
+    }
+  },
+},
 
     notes: [
   ],
@@ -170,10 +178,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 0
+    }
+  },
+},
 
     notes: [
   ],
@@ -205,9 +216,13 @@
       scentData: false
     },
 
-    sequencing: {
-      hexaploid_BOL: 1,
-    },
+   genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 1
+    }
+  },
+},
 
     notes: [
   ],
@@ -239,10 +254,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "4x": 0
+    }
+  },
+},
 
     notes: [
   ],
@@ -274,10 +293,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "6x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -310,10 +332,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -346,10 +371,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+   genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -382,9 +410,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 4,
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 4,
+    }
+  },
+},
 
     notes: [
   ],
@@ -416,10 +448,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -451,10 +486,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -486,10 +524,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -521,10 +562,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
       "Along the south-facing slope of the South Fork of the Merced River within the first 2 km upstream of its confluence with the Merced River. This habitat is drier and sunnier and dominated by a diverse mix of perennial herbs, shrubs, and trees."
@@ -580,10 +624,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -615,10 +662,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -650,10 +700,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -685,10 +738,15 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "3x": 0,
+      "8x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -721,10 +779,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -757,10 +818,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -792,10 +856,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -827,9 +894,13 @@
       scentData: false
     },
 
-    sequencing: {
-      tetraploid_BOL: 1,
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 1,
+    }
+  },
+},
 
     notes: [
   ],
@@ -861,10 +932,15 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 4,
-      tetraploid_BOL: 1
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 4,
+      "4x": 1,
+      "5x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -896,10 +972,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+     genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "4x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -931,10 +1011,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+   genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "4x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -967,9 +1051,14 @@
       scentData: false
     },
 
-    sequencing: {
-      tetraploid_BOL: 1,
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 1,
+      "5x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1001,10 +1090,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1036,10 +1128,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1071,10 +1166,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1106,10 +1204,16 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "3x": 0,
+      "4x": 0,
+      "6x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1141,9 +1245,13 @@
       scentData: false
     },
 
-    sequencing: {
-      tetraploid_BOL: 1,
-    },
+     genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 1,
+    }
+  },
+},
 
     notes: [
       "The habitat is a shaded slope, covered in oak (Quercus spp.), buckeye (Aesculus californica), and redbud (Cercis occidentalis). There are thousands of L. bolanderi individuals, and G. politella is comparatively abundant relative to other populations"
@@ -1198,11 +1306,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
-
+    genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 0,
+    }
+  },
+},
     notes: [
   ],
 
@@ -1233,10 +1343,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "4x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1268,10 +1382,15 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 4,
-      tetraploid_BOL: 1
-    },
+     genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 4,
+      "3x": 0,
+      "4x": 1,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1303,10 +1422,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1339,10 +1461,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 0,
+      "5x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1374,10 +1500,15 @@
       scentData: false
     },
 
-    sequencing: {
-      tetraploid_BOL: 1,
-      hexaploid_BOL: 1,
-    },
+     genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 1,
+      "5x": 0,
+      "6x": 1,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1410,10 +1541,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "4x": 0,
+      "5x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1445,10 +1580,14 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  BOL: {
+    ploidy: {
+      "2x": 0,
+      "4x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1480,10 +1619,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  CYM: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1515,9 +1657,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_GLA:4,
-    },
+    genetics: {
+  GLA: {
+    ploidy: {
+      "2x": 4,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1549,10 +1695,13 @@
       scentData: false
     },
 
-    sequencing: {
-      diploid_BOL: 0,
-      tetraploid_BOL: 0
-    },
+    genetics: {
+  HET: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
 
     notes: [
   ],
@@ -1631,13 +1780,37 @@ allMarkers.push(entry);
   }
 </div>
 
+<div class="popup-section">
+  <div class="popup-label">Lithophragma species</div>
+
+  ${Object.keys(pop.genetics)
+    .map(sp => `<div>${sp}</div>`)
+    .join("")}
+</div>
+
   <div class="popup-section">
-    <div class="popup-label">Sequencing</div>
-    ${Object.entries(pop.sequencing)
-      .filter(([_, v]) => v !== 0 && v != null)
-      .map(([k, v]) => `<div>${sequencingLabels[k] || k}: ${v}</div>`)
-      .join("")}
-  </div>
+  <div class="popup-label">Genetic data</div>
+
+  ${Object.entries(pop.genetics)
+    .map(([species, data]) => {
+
+      const ploidyStr = Object.entries(data.ploidy)
+        .filter(([_, count]) => count != null && count !== 0)
+        .map(([ploidy, count]) => {
+
+          // if no count or 0 → just ploidy
+          if (!count) return ploidy;
+
+          return `${ploidy} (${count})`;
+        })
+        .join(", ");
+
+      return `<div>
+        <strong>${species}:</strong> ${ploidyStr}
+      </div>`;
+    })
+    .join("")}
+</div>
 
   <div class="popup-section">
     <div class="popup-label">Phenotypic data</div>
