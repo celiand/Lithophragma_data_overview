@@ -1795,7 +1795,7 @@ allMarkers.push(entry);
     .map(([species, data]) => {
 
       const ploidyStr = Object.entries(data.ploidy)
-        .filter(([_, count]) => count != null && count !== 0)
+        .filter(([_, count]) => count != null)
         .map(([ploidy, count]) => {
 
           // if no count or 0 → just ploidy
