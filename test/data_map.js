@@ -2219,6 +2219,525 @@
 
   },
 
+  {
+    id: "MNF?",
+    name: "Malheur National Forest",
+    lat: 44.15,
+    lon: -119.00,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },  
+
+  {
+    id: "MEA?",
+    name: "Meadow Creek",
+    lat: 46.2,
+    lon: -115.17,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "CNF?",
+    name: "Choco National Forest",
+    lat: 44.24,
+    lon: -120.15,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "RAP?",
+    name: "Rapid River",
+    lat: 45.21,
+    lon: -116.22,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "SAD?",
+    name: "Saddle Mountain",
+    lat: 45.40,
+    lon: -116.30,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "SAL?",
+    name: "Salmon River, Near Riggins",
+    lat: 45.24,
+    lon: -116.5,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "SEL?",
+    name: "Selway River",
+    lat: 46.5,
+    lon: -115.27,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "SFC?",
+    name: "South Fork Clearwater",
+    lat: 45.55,
+    lon: -116.1,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "STE?",
+    name: "Steen Mountains",
+    lat: 42.47,
+    lon: -118.45,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "STO?",
+    name: "Stough Reservoir",
+    lat: 41.33,
+    lon: -120.15,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  GLA: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "TNW?",
+    name: "Turnbull National Wildlife Refuge",
+    lat: 47.24,
+    lon: -117.34,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "WEN?",
+    name: "Wenaha River",
+    lat: 45.56,
+    lon: -117.28,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "WIN?",
+    name: "Wind River",
+    lat: 45.27,
+    lon: -115.56,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
 ];
 
   populations.forEach(pop => {
