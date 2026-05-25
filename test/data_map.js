@@ -1882,6 +1882,46 @@
 
    
   {
+    id: "BER?",
+    name: "Berg Mountain",
+    lat: 45.25,
+    lon: -116.11,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
     id: "ANT?",
     name: "Antelope Creek",
     lat: 44.5,
@@ -1900,6 +1940,265 @@
       "2x": 0,
     }
   },
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "BCO?",
+    name: "Buck Creek Overlook",
+    lat: 41.53,
+    lon: -120.17,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+  GLA: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+  TEN: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+     
+  {
+    id: "EPH?",
+    name: "Ephrata",
+    lat: 47.20,
+    lon: -119.35,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  THO: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+  GLA: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "FIS?",
+    name: "Fish Lake",
+    lat: 42.44,
+    lon: -118.39,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  TEN: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+    {
+    id: "GRA?",
+    name: "Granite Point",
+    lat: 46.35,
+    lon: -117.20,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+    {
+    id: "KEA?",
+    name: "Keating Ridge",
+    lat: 46.35,
+    lon: -117.20,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  PAR: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+    {
+    id: "KLI?",
+    name: "Klickitat River",
+    lat: 45.50,
+    lon: -121.04,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  GLA: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
 },
 
     notes: [
@@ -2060,7 +2359,7 @@ ${
 
 <div class="popup-section" style="font-size:11px; color:#666;">
   * POL = G. politella ; OBS = G. obscura<br>
-  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum
+  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii
 </div>
 `);
 
