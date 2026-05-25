@@ -1721,6 +1721,46 @@
 
   },
 
+  
+  {
+    id: "DOG?",
+    name: "Dog Creek",
+    lat: 42.36,
+    lon: -122.36,
+    elevation: NA,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+},
+
+    notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
 ];
 
   populations.forEach(pop => {
@@ -1875,7 +1915,7 @@ ${
 
   <div class="popup-section" style="font-size:11px; color:#666;">
     * POL = G. politella ; OBS = G. obscura<br>
-    ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum
+    ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine
   </div>
 `);
 
