@@ -1622,7 +1622,6 @@
     genetics: {
   CYM: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1698,7 +1697,6 @@
     genetics: {
   HET: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1727,7 +1725,7 @@
     name: "Dog Creek",
     lat: 42.36,
     lon: -122.36,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1738,7 +1736,6 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1767,7 +1764,7 @@
     name: "Oak Ridge",
     lat: 43.44,
     lon: -122.29,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1778,7 +1775,6 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1807,7 +1803,7 @@
     name: "Rowena",
     lat: 45.40,
     lon: -121.13,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1818,7 +1814,6 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1846,7 +1841,7 @@
     name: "San Juan Island",
     lat: 48.35,
     lon: -123.6,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1857,7 +1852,6 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1886,7 +1880,7 @@
     name: "Berg Mountain",
     lat: 45.25,
     lon: -116.11,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1897,7 +1891,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1926,7 +1919,7 @@
     name: "Antelope Creek",
     lat: 44.5,
     lon: -120.55,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1937,7 +1930,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -1966,7 +1958,7 @@
     name: "Buck Creek Overlook",
     lat: 41.53,
     lon: -120.17,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -1983,13 +1975,11 @@
 
   GLA: {
     ploidy: {
-      "2x": 0,
     }
   },
 
   TEN: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -2018,7 +2008,7 @@
     name: "Ephrata",
     lat: 47.20,
     lon: -119.35,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2029,13 +2019,11 @@
     genetics: {
   THO: {
     ploidy: {
-      "2x": 0,
     }
   },
 
   GLA: {
     ploidy: {
-      "2x": 0,
     }
   },
 },
@@ -2064,7 +2052,7 @@
     name: "Fish Lake",
     lat: 42.44,
     lon: -118.39,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2075,7 +2063,6 @@
     genetics: {
   TEN: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2104,7 +2091,7 @@
     name: "Granite Point",
     lat: 46.35,
     lon: -117.20,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2115,7 +2102,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2144,7 +2130,7 @@
     name: "Keating Ridge",
     lat: 46.35,
     lon: -117.20,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2155,7 +2141,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2184,7 +2169,7 @@
     name: "Klickitat River",
     lat: 45.50,
     lon: -121.04,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2195,7 +2180,6 @@
     genetics: {
   GLA: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2224,7 +2208,7 @@
     name: "Malheur National Forest",
     lat: 44.15,
     lon: -119.00,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2235,7 +2219,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2264,7 +2247,7 @@
     name: "Meadow Creek",
     lat: 46.2,
     lon: -115.17,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2275,7 +2258,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2304,7 +2286,7 @@
     name: "Choco National Forest",
     lat: 44.24,
     lon: -120.15,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2315,7 +2297,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2344,7 +2325,7 @@
     name: "Rapid River",
     lat: 45.21,
     lon: -116.22,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2355,7 +2336,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2384,7 +2364,7 @@
     name: "Saddle Mountain",
     lat: 45.40,
     lon: -116.30,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2395,7 +2375,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2424,7 +2403,7 @@
     name: "Salmon River, Near Riggins",
     lat: 45.24,
     lon: -116.5,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2435,7 +2414,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2464,7 +2442,7 @@
     name: "Selway River",
     lat: 46.5,
     lon: -115.27,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2475,7 +2453,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2504,7 +2481,7 @@
     name: "South Fork Clearwater",
     lat: 45.55,
     lon: -116.1,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2515,7 +2492,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2544,7 +2520,7 @@
     name: "Steen Mountains",
     lat: 42.47,
     lon: -118.45,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2555,7 +2531,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2584,7 +2559,7 @@
     name: "Stough Reservoir",
     lat: 41.33,
     lon: -120.15,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2595,7 +2570,6 @@
     genetics: {
   GLA: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2624,7 +2598,7 @@
     name: "Turnbull National Wildlife Refuge",
     lat: 47.24,
     lon: -117.34,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2635,7 +2609,7 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
+
     }
   },
 
@@ -2664,7 +2638,7 @@
     name: "Wenaha River",
     lat: 45.56,
     lon: -117.28,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2675,7 +2649,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2704,7 +2677,7 @@
     name: "Wind River",
     lat: 45.27,
     lon: -115.56,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2715,7 +2688,6 @@
     genetics: {
   PAR: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2744,7 +2716,7 @@
     name: "Cow Creek",
     lat: 42.55,
     lon: -123.27,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2755,7 +2727,7 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
+
     }
   },
 
@@ -2784,7 +2756,7 @@
     name: "Klamathon",
     lat: 41.51,
     lon: -122.33,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2795,13 +2767,12 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
+
     }
   },
 
   GLA: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2830,7 +2801,7 @@
     name: "Klamath River",
     lat: 41.49,
     lon: -122.39,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2841,13 +2812,11 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
     }
   },
 
   GLA: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2876,7 +2845,7 @@
     name: "Pit River",
     lat: 40.58,
     lon: -121.50,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2887,7 +2856,6 @@
     genetics: {
   CAM: {
     ploidy: {
-      "2x": 0,
     }
   },
 
@@ -2916,7 +2884,7 @@
     name: "Palmer Creek",
     lat: 42.6,
     lon: -123.5,
-    elevation: -1000,
+    
 
     site: {
       moths: [],
@@ -2927,7 +2895,6 @@
     genetics: {
   AFF: {
     ploidy: {
-      "2x": 0,
     }
   },
 
