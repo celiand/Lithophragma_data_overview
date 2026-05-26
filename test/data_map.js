@@ -2738,6 +2738,296 @@
 ]
 
   },
+
+  {
+    id: "COW?",
+    name: "Cow Creek",
+    lat: 42.55,
+    lon: -123.27,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "KLA?",
+    name: "Klamathon",
+    lat: 41.51,
+    lon: -122.33,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+  GLA: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "KLR?",
+    name: "Klamath River",
+    lat: 41.49,
+    lon: -122.39,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+  GLA: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "PIT?",
+    name: "Pit River",
+    lat: 40.58,
+    lon: -121.50,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  CAM: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "PAL?",
+    name: "Palmer Creek",
+    lat: 42.6,
+    lon: -123.5,
+    elevation: -1000,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+      "2x": 0,
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+{
+    id: "SQU?",
+    name: "Squaw Creek",
+    lat: 42.1,
+    lon: -123.5,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+{
+    id: "TAY?",
+    name: "Taylor Creek",
+    lat: 42.31,
+    lon: -123.36,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+
 ];
 
   populations.forEach(pop => {
@@ -2784,7 +3074,15 @@ allMarkers.push(entry);
   <div><span class="popup-label">ID:</span> ${pop.id}</div>
   <div><span class="popup-label">Lat:</span> ${pop.lat}</div>
   <div><span class="popup-label">Lon:</span> ${pop.lon}</div>
-  <div><span class="popup-label">Elevation:</span> ${pop.elevation} m</div>
+  <div>
+  <span class="popup-label">Elevation:</span>
+
+  ${
+    pop.elevation != null
+      ? `${pop.elevation} m`
+      : "NA"
+  }
+</div>
 </div>
 
 <div class="popup-section">
@@ -2807,24 +3105,44 @@ ${
 <div class="popup-section">
   <div class="popup-label">Genetic data</div>
 
-    ${Object.entries(pop.genetics)
+  ${Object.entries(pop.genetics)
     .map(([species, data]) => {
 
-    const ploidyStr = Object.entries(data.ploidy)
-    .filter(([_, count]) => count != null)
-    .map(([ploidy, count]) => {
+      const ploidyEntries =
+        Object.entries(data.ploidy || {})
+          .filter(([_, count]) => count != null);
 
-    // if no count or 0 → just ploidy
-    if (!count) return ploidy;
+      let ploidyStr = "";
 
-    return `${ploidy} (${count})`; })
-    .join(", ");
+      // no ploidy data
+      if (ploidyEntries.length === 0) {
 
-    return `<div>
-    <strong>${species}:</strong> ${ploidyStr}
-  </div>`;
-  })
-  .join("")}
+        ploidyStr = "NA";
+
+      } else {
+
+        ploidyStr = ploidyEntries
+          .map(([ploidy, count]) => {
+
+            // 0 → ploidy only
+            if (count === 0) {
+              return ploidy;
+            }
+
+            return `${ploidy} (${count})`;
+
+          })
+          .join(", ");
+      }
+
+      return `
+        <div>
+          <strong>${species}:</strong> ${ploidyStr}
+        </div>
+      `;
+
+    })
+    .join("")}
 </div>
 
 <div class="popup-section">
@@ -2878,7 +3196,7 @@ ${
 
 <div class="popup-section" style="font-size:11px; color:#666;">
   * POL = G. politella ; OBS = G. obscura<br>
-  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii
+  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii, CAM = L. campanulatum
 </div>
 `);
 
