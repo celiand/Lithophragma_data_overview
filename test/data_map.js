@@ -2993,7 +2993,689 @@
 ]
 
   },
+  
+{
+    id: "TRI?",
+    name: "Trinity Mountain",
+    lat: 40.49,
+    lon: -122.39,
 
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  CAM: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+{
+    id: "TRI2?",
+    name: "Trinity Mountain 2",
+    lat: 40.56,
+    lon: -122.36,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+{
+    id: "WAL?",
+    name: "Walker Road",
+    lat: 41.50,
+    lon: -122.54,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+{
+    id: "BLU?",
+    name: "Blue Oak Reserve",
+    lat: 37.22,
+    lon: -121.43,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+{
+    id: "COA?",
+    name: "Coalinga Road",
+    lat: 36.23,
+    lon: -120.55,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+{
+    id: "COL?",
+    name: "Cold Springs",
+    lat: 39.56,
+    lon: -122.44,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  CAM: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+
+  {
+    id: "FAR?",
+    name: "Farley",
+    lat: 39.36,
+    lon: -123.21,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "HAS?",
+    name: "Hastings Reserve",
+    lat: 36.23,
+    lon: -121.33,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  {
+    id: "HFS?",
+    name: "Hopland Field Station",
+    lat: 38.59,
+    lon: -123.4,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  BOL: {
+    ploidy: {
+    }
+  },
+
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+  {
+    id: "MAD?",
+    name: "Mad River",
+    lat: 40.24,
+    lon: -123.28,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+  {
+    id: "SAN?",
+    name: "Santa Margarita",
+    lat: 35.25,
+    lon: -120.33,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  CYM: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+  
+  {
+    id: "MEN?",
+    name: "Mendocino National Forest",
+    lat: 39.40,
+    lon: -122.41,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+  {
+    id: "NFR?",
+    name: "Nacimiento-Fergusson Road",
+    lat: 36.0,
+    lon: -121.24,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+  {
+    id: "NYB?",
+    name: "North Yolla Bolly Wilderness",
+    lat: 40.23,
+    lon: -122.58,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  CAM: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+  {
+    id: "PEP?",
+    name: "Pepperwood Reserve",
+    lat: 38.34,
+    lon: -122.43,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+  {
+    id: "PNPE?",
+    name: "Pinnacles National Park East",
+    lat: 36.30,
+    lon: -121.7,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "PNP?",
+    name: "Pinnacles National Park",
+    lat: 36.29,
+    lon: -121.8,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
 
 ];
 
