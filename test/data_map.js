@@ -4408,13 +4408,13 @@ function updateFilters() {
   document.getElementById("filterPNAS2025").checked;
 
   allMarkers.forEach(entry => {
-    const hasPNAS = HAS_PNAS_2025(pop);
-
     const pop = entry.population;
     const marker = entry.marker;
 
     const hasPOL = pop.site.moths.includes("POL");
     const hasOBS = pop.site.moths.includes("OBS");
+
+    const hasPNAS = HAS_PNAS_2025(pop);
 
     let visible = true;
     
