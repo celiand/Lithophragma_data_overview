@@ -4380,7 +4380,7 @@ marker.on("popupclose", () => {
 
 const HAS_PNAS_2025 = (pop) =>
   pop.literature?.some(ref =>
-    ref.url?.includes("10.1073/pnas.2505119122")
+    ref.url?.includes("https://www.pnas.org/doi/abs/10.1073/pnas.2505119122")
   );
 
 
