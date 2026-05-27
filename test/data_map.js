@@ -4379,8 +4379,10 @@ marker.on("popupclose", () => {
 // filter part : PNAS 2025
 
 const HAS_PNAS_2025 = (pop) =>
-  pop.literature?.some(ref =>
-    ref.url?.includes("https://www.pnas.org/doi/abs/10.1073/pnas.2505119122")
+  Array.isArray(pop.literature) &&
+  pop.literature.some(ref =>
+    typeof ref.url === "string" &&
+    ref.url.includes("10.1073/pnas.2505119122")
   );
 
 
@@ -4415,6 +4417,8 @@ function updateFilters() {
     const hasOBS = pop.site.moths.includes("OBS");
 
     const hasPNAS = HAS_PNAS_2025(pop);
+
+    console.log(hasPNAS);
 
     let visible = true;
     
