@@ -413,7 +413,7 @@
     genetics: {
   BOL: {
     ploidy: {
-      "2x": 4,
+      "2x": 10,
     }
   },
 },
@@ -565,7 +565,7 @@
     genetics: {
   BOL: {
     ploidy: {
-      "2x": 0,
+      "2x": 10,
     }
   },
 },
@@ -859,7 +859,7 @@
     genetics: {
   BOL: {
     ploidy: {
-      "2x": 0,
+      "2x": 10,
     }
   },
 },
@@ -935,7 +935,7 @@
     genetics: {
   BOL: {
     ploidy: {
-      "2x": 4,
+      "2x": 7,
       "4x": 1,
       "5x": 0,
     }
@@ -1093,7 +1093,7 @@
     genetics: {
   BOL: {
     ploidy: {
-      "2x": 0,
+      "2x": 10,
     }
   },
 },
@@ -1169,7 +1169,7 @@
     genetics: {
   BOL: {
     ploidy: {
-      "2x": 0,
+      "2x": 10,
     }
   },
 },
@@ -1385,7 +1385,7 @@
      genetics: {
   BOL: {
     ploidy: {
-      "2x": 4,
+      "2x": 10,
       "3x": 0,
       "4x": 1,
     }
