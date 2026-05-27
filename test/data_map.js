@@ -3677,6 +3677,513 @@
 
   },
 
+     
+  {
+    id: "PNPW?",
+    name: "Pinnacles National Park West",
+    lat: 36.29,
+    lon: -121.12,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  CYM: {
+    ploidy: {
+    }
+  },
+
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+
+       
+  {
+    id: "QRR?",
+    name: "Quail Ridge Reserve",
+    lat: 38.29,
+    lon: -122.9,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  HET: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+       
+  {
+    id: "RIN?",
+    name: "Rinconado Creek",
+    lat: 35.17,
+    lon: -120.28,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  CYM: {
+    ploidy: {
+    }
+  },
+
+},
+
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   {
+    id: "REL?",
+    name: "Relize Canyon",
+    lat: 36.14,
+    lon: -121.17,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+   {
+    id: "SPE?",
+    name: "Spenceville",
+    lat: 39.6,
+    lon: -121.14,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+   {
+    id: "BLA?",
+    name: "Black Springs",
+    lat: 38.23,
+    lon: -120.11,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+
+   {
+    id: "COLC?",
+    name: "Colson Canyon",
+    lat: 34.56,
+    lon: -120.12,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  CYM: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+   {
+    id: "COU2?",
+    name: "Coulterville 2",
+    lat: 37.41,
+    lon: -120.10,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+   {
+    id: "DIN2?",
+    name: "Dinkey Creek 2",
+    lat: 36.59,
+    lon: -119.7,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  BOL: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+     {
+    id: "FEA?",
+    name: "Feather Falls",
+    lat: 39.38,
+    lon: -121.16,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  BOL: {
+    ploidy: {
+    }
+  },
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  CAM: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+     {
+    id: "HOG?",
+    name: "Hogsback Road",
+    lat: 40.16,
+    lon: -121.51,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  TRI: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+  
+     {
+    id: "HMV?",
+    name: "Hunter Mountain Valley Road",
+    lat: 37.35,
+    lon: -120.8,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  BOL: {
+    ploidy: {
+    }
+  },
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
 ];
 
   populations.forEach(pop => {
@@ -3845,7 +4352,7 @@ ${
 
 <div class="popup-section" style="font-size:11px; color:#666;">
   * POL = G. politella ; OBS = G. obscura<br>
-  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii, CAM = L. campanulatum
+  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii, CAM = L. campanulatum, TRI = L. trifoliatum
 </div>
 `);
 
@@ -3868,6 +4375,15 @@ marker.on("popupclose", () => {
 
 });
 
+
+// filter part : PNAS 2025
+
+const HAS_PNAS_2025 = (pop) =>
+  pop.literature?.some(ref =>
+    ref.url?.includes("10.1073/pnas.2505119122")
+  );
+
+
 //filter part - moth
 const mothColors = {
   POL: "#eaa91eef",
@@ -3888,7 +4404,11 @@ function updateFilters() {
   const mode =
     document.querySelector('input[name="mothMode"]:checked').value;
 
+    const showPNAS =
+  document.getElementById("filterPNAS2025").checked;
+
   allMarkers.forEach(entry => {
+    const hasPNAS = HAS_PNAS_2025(pop);
 
     const pop = entry.population;
     const marker = entry.marker;
@@ -3897,7 +4417,7 @@ function updateFilters() {
     const hasOBS = pop.site.moths.includes("OBS");
 
     let visible = true;
-
+    
     // if no filters selected → show everything
     if (showPOL || showOBS) {
 
@@ -3919,7 +4439,12 @@ function updateFilters() {
       }
     }
 
+    if (showPNAS && !hasPNAS) {
+      visible = false;
+    }
+
     entry.state.visible = visible;
+    
 
 // activate special color mode only in this case
 entry.state.mothColorMode =
