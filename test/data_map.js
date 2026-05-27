@@ -4397,6 +4397,8 @@ const mothColors = {
 
 function updateFilters() {
 
+  console.log("updateFilters running");
+
   const showPOL =
     document.getElementById("filterPOL").checked;
 
@@ -4490,6 +4492,9 @@ document
   .forEach(el =>
     el.addEventListener("change", updateFilters)
   );
+
+  document.getElementById("filterPNAS2025")
+  .addEventListener("change", updateFilters);
 
 
 function getMothColor(pop) {
