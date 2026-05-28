@@ -1123,7 +1123,7 @@
     elevation: 195,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: false,
       scentData: false
     },
@@ -1301,7 +1301,7 @@
     elevation: 477,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: false,
       scentData: false
     },
@@ -2719,7 +2719,7 @@
     
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -2759,7 +2759,7 @@
     
 
     site: {
-      moths: [],
+      moths: ["OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -2804,7 +2804,7 @@
     
 
     site: {
-      moths: [],
+      moths: ["OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -2887,7 +2887,7 @@
     
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -2925,7 +2925,7 @@
     lon: -123.5,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -2963,7 +2963,7 @@
     lon: -123.36,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -3079,7 +3079,7 @@
     lon: -122.54,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -3277,7 +3277,7 @@
     lon: -121.33,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -3320,7 +3320,7 @@
     lon: -123.4,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -3369,7 +3369,7 @@
     lon: -123.28,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -3446,7 +3446,7 @@
     lon: -122.41,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -3563,7 +3563,7 @@
     lon: -122.43,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -3646,7 +3646,7 @@
     lon: -121.8,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -3943,7 +3943,7 @@
     lon: -120.12,
 
     site: {
-      moths: [],
+      moths: ["POL","OBS"],
       morphologicalData: true,
       scentData: false
     },
@@ -4062,7 +4062,7 @@
     lon: -121.16,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -4235,7 +4235,7 @@
     lon: -118.48,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -4357,7 +4357,7 @@
     lon: -118.49,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -4518,7 +4518,7 @@
     lon: -118.46,
 
     site: {
-      moths: [],
+      moths: ["POL"],
       morphologicalData: true,
       scentData: false
     },
@@ -4682,6 +4682,620 @@
 
   },
 
+  
+  {
+    id: "TUOR?",
+    name: "Tuolumne River",
+    lat: 37.59,
+    lon: -120.12,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  BOL: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "WAS?",
+    name: "Washington Hills",
+    lat: 39.47,
+    lon: -120.52,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  GLA: {
+    ploidy: {
+    }
+  },
+
+  TEN: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+  
+   
+  {
+    id: "WOO2?",
+    name: "Woody 2",
+    lat: 35.43,
+    lon: -118.47,
+
+    site: {
+      moths: ["POL"],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+  BOL: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "CER?",
+    name: "Cerro Noroeste",
+    lat: 34.52,
+    lon: -119.20,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFF: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "SED?",
+    name: "Sedgwick Reserve",
+    lat: 34.42,
+    lon: -120.2,
+
+    site: {
+      moths: ["POL","OBS"],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  CYM: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "SMP?",
+    name: "San Marcos Pass",
+    lat: 34.32,
+    lon: -119.50,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  CYM: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "SCI?",
+    name: "San Clemente Island",
+    lat: 32.51,
+    lon: -118.24,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  MAX: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "SCP2?",
+    name: "Santa Cruz Island",
+    lat: 34.01,
+    lon: -119.41,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  CYM: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "LAH?",
+    name: "Lake Helmet",
+    lat: 33.40,
+    lon: -116.41,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "HEN?",
+    name: "Henshaw 2",
+    lat: 33.12,
+    lon: -116.44,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "IDY?",
+    name: "Idyllwild",
+    lat: 33.42,
+    lon: -116.43,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "MTL?",
+    name: "Mt Laguna",
+    lat: 32.53,
+    lon: -116.26,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "PIN?",
+    name: "Pine Valley",
+    lat: 32.50,
+    lon: -116.32,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "RAN?",
+    name: "Ranger Peak",
+    lat: 33.50,
+    lon: -116.48,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
+
+   
+  {
+    id: "SIL?",
+    name: "Silverwood Lake",
+    lat: 34.16,
+    lon: -117.16,
+
+    site: {
+      moths: [],
+      morphologicalData: true,
+      scentData: false
+    },
+
+    genetics: {
+
+  AFFm: {
+    ploidy: {
+    }
+  },
+
+},
+  
+  notes: [
+  ],
+
+  literature: [
+  {
+    authors:
+      "Thompson, J. N., Schwind, C., & Friberg, M.",
+
+    title:
+      "Diversification of trait combinations in coevolving plant and insect lineages",
+
+    url:
+      "https://www.journals.uchicago.edu/doi/full/10.1086/692164"
+  }
+]
+
+  },
 ];
 
   populations.forEach(pop => {
@@ -4850,7 +5464,7 @@ ${
 
 <div class="popup-section" style="font-size:11px; color:#666;">
   * POL = G. politella ; OBS = G. obscura<br>
-  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii, CAM = L. campanulatum, TRI = L. trifoliatum
+  ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii, CAM = L. campanulatum, TRI = L. trifoliatum, MAX = L. maximum, AFFm= L. affine mixtum
 </div>
 `);
 
