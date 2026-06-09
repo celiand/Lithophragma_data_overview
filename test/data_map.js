@@ -5584,6 +5584,19 @@ function computeLithoColor(pop, selectedSpecies, mode) {
   return defaultColor;
 }
 
+function getSelectedLithoSpecies() {
+
+  const ids = [
+    "BOL", "GLA", "AFF", "HET", "CYM",
+    "PAR", "TRI", "CAM", "TEN", "THO",
+    "MAX", "AFFm"
+  ];
+
+  return ids.filter(id => {
+    const el = document.getElementById("filter" + id);
+    return el && el.checked;
+  });
+}
 
 
 function updateFilters() {
@@ -5602,6 +5615,12 @@ function updateFilters() {
 
   const showSequencing =
   document.getElementById("filterSequencing").checked;
+
+  const displayMode = document.querySelector('input[name="displayMode"]:checked').value;
+
+const lithoMode = document.querySelector('input[name="lithoMode"]:checked').value;
+
+const selectedLitho = getSelectedLithoSpecies();
 
   allMarkers.forEach(entry => {
     const pop = entry.population;
