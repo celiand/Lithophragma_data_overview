@@ -5490,29 +5490,19 @@ marker.on("popupclose", () => {
 
 // display type
 
+const mothControls = document.getElementById("mothControls");
+const lithoControls = document.getElementById("lithoControls");
+
 function updateDisplayMode() {
 
-  const mode =
-    document.querySelector(
-      'input[name="displayMode"]:checked'
-    ).value;
+  const mode = document.querySelector(
+    'input[name="displayMode"]:checked'
+  ).value;
 
-  document
-    .getElementById("mothControls")
-    .classList.toggle(
-      "hidden",
-      mode !== "moth"
-    );
-
-  document
-    .getElementById("lithoControls")
-    .classList.toggle(
-      "hidden",
-      mode !== "litho"
-    );
+  mothControls.classList.toggle("hidden", mode !== "moth");
+  lithoControls.classList.toggle("hidden", mode !== "litho");
 
   updateFilters();
-
 }
 
 // filter part : PNAS 2025
@@ -5556,6 +5546,12 @@ function updateFilters() {
 
   const mode =
     document.querySelector('input[name="mothMode"]:checked').value;
+
+    document
+  .querySelectorAll('input[name="displayMode"]')
+  .forEach(el =>
+    el.addEventListener("change", updateDisplayMode)
+  );
 
     const showPNAS =
   document.getElementById("filterPNAS2025").checked;
