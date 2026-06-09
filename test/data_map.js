@@ -5495,6 +5495,8 @@ const lithoControls = document.getElementById("lithoControls");
 
 function updateDisplayMode() {
 
+  console.log("display mode script loaded");
+
   const mode = document.querySelector(
     'input[name="displayMode"]:checked'
   ).value;
