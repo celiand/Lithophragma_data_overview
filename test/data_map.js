@@ -5635,8 +5635,6 @@ allMarkers.forEach(entry => {
   const hasPNAS = HAS_PNAS_2025(pop);
   const hasSequencing = hasSequencingData(pop);
 
-  const selectedLitho = getSelectedLithoSpecies();
-
   let visible = true;
 
   // =====================
@@ -5669,7 +5667,9 @@ allMarkers.forEach(entry => {
   // =====================
   // litho filter
   // =====================
-  if (displayMode === "litho" && selectedLitho.length > 0) {
+  if (displayMode === "litho") {
+
+    if (selectedLitho.length > 0) {
 
     const present = Object.keys(pop.genetics || {});
 
@@ -5686,6 +5686,10 @@ allMarkers.forEach(entry => {
       );
       if (!match) visible = false;
     }
+
+      }else if (selectedLitho.length === 0) {
+      visible = true;
+    }
   }
 
   // =====================
@@ -5698,8 +5702,10 @@ allMarkers.forEach(entry => {
   entry.state.lithoMode = lithoMode;
   entry.state.selectedLitho = selectedLitho;
 
-  entry.state.hasPOL = hasPOL;
-  entry.state.hasOBS = hasOBS;
+  entry.state.moths = {
+  POL: hasPOL,
+  OBS: hasOBS
+};
 
   renderMarker(entry);
 });
@@ -5756,12 +5762,10 @@ function updateSearchHighlight() {
 
     entry.state.searchMatch =
       searchQuery === "" ||
-
       pop.id.toLowerCase().includes(searchQuery) ||
-
       pop.name.toLowerCase().includes(searchQuery);
 
-    renderMarker(entry);
+    updateAllRender();
 
   });
 
@@ -5770,6 +5774,10 @@ function updateSearchHighlight() {
 
 
 //centralized style function
+
+function updateAllRender() {
+  allMarkers.forEach(renderMarker);
+}
 
 function renderMarker(entry) {
 
@@ -5835,8 +5843,8 @@ if (state.displayMode === "moth") {
 
   } else {
     // AND or single logic fallback
-    if (state.hasPOL) fillColor = mothColors.POL;
-    else if (state.hasOBS) fillColor = mothColors.OBS;
+    if (state.moths.hasPOL) fillColor = mothColors.POL;
+    else if (state.moths.hasOBS) fillColor = mothColors.OBS;
   }
   style.fillColor = fillColor;
 }else if (state.displayMode === "litho") {
