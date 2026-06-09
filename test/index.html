@@ -30,6 +30,25 @@
   />
 </div>
 
+<h4>Display mode</h4>
+
+<label>
+  <input
+    type="radio"
+    name="displayMode"
+    value="moth"
+    checked>
+  Moths species
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="displayMode"
+    value="litho">
+  Lithophragma Species
+</label>
+  <div id="mothControls" class="hidden">
   <h4>Moth filter</h4>
 
   <label>
@@ -53,6 +72,25 @@
     <input type="checkbox" id="filterOBS">
     OBS
   </label>
+</div>
+
+<div id="lithoControls" class="hidden">
+
+  <label>
+    <input type="radio" name="lithoMode" value="or" checked>
+    OR
+  </label>
+
+  <label>
+    <input type="radio" name="lithMode" value="and">
+    AND
+  </label>
+
+  <hr>
+
+  <!-- species checkboxes later -->
+
+</div>
 
   <h4>Sequencing data filter</h4>
 

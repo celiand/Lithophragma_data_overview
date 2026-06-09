@@ -5488,6 +5488,33 @@ marker.on("popupclose", () => {
 });
 
 
+// display type
+
+function updateDisplayMode() {
+
+  const mode =
+    document.querySelector(
+      'input[name="displayMode"]:checked'
+    ).value;
+
+  document
+    .getElementById("mothControls")
+    .classList.toggle(
+      "hidden",
+      mode !== "moth"
+    );
+
+  document
+    .getElementById("lithoControls")
+    .classList.toggle(
+      "hidden",
+      mode !== "litho"
+    );
+
+  updateFilters();
+
+}
+
 // filter part : PNAS 2025
 
   const HAS_PNAS_2025 = (pop) =>
@@ -5544,6 +5571,8 @@ function updateFilters() {
     const hasOBS = pop.site.moths.includes("OBS");
 
     const hasPNAS = HAS_PNAS_2025(pop);
+
+    const hasSequencing = hasSequencingData(pop);
 
     let visible = true;
     
