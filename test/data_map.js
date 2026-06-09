@@ -5543,6 +5543,48 @@ const mothColors = {
 };
 
 
+// filter part - litho
+
+const lithoColors = {
+  BOL: "#eaa91e",
+  GLA: "#148b48",
+  AFF: "#4a6cff",
+  HET: "#9a39e0",
+  CYM: "#6e0e0e",
+  PAR: "#5cff11",
+  TRI: "#adaecd",
+  CAM: "#58eaf1",
+  TEN: "#e176b4",
+  THO: "#7d4d0b",
+  MAX: "#0ec566",
+  AFFm: "#450e56",
+};
+
+function computeLithoColor(pop, selectedSpecies, mode) {
+
+  const present = Object.keys(pop.genetics || {});
+
+  if (mode === "or") {
+
+    // first match wins OR multiple → pick first match
+    const match = present.find(sp => selectedSpecies.includes(sp));
+
+    return match ? lithoColors[match] : defaultColor;
+  }
+
+  if (mode === "and") {
+
+    const allPresent = selectedSpecies.every(sp =>
+      present.includes(sp)
+    );
+
+    return allPresent ? "#333" : defaultColor;
+  }
+
+  return defaultColor;
+}
+
+
 
 function updateFilters() {
 
