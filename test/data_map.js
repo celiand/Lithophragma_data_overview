@@ -5669,28 +5669,18 @@ allMarkers.forEach(entry => {
   // =====================
   if (displayMode === "litho") {
 
-    if (selectedLitho.length > 0) {
+  const present = Object.keys(pop.genetics || {});
 
-    const present = Object.keys(pop.genetics || {});
+  if (selectedLitho.length > 0) {
 
-    if (lithoMode === "or") {
-      const match = present.some(sp =>
-        selectedLitho.includes(sp)
-      );
-      if (!match) visible = false;
-    }
+    const match =
+      lithoMode === "or"
+        ? present.some(sp => selectedLitho.includes(sp))
+        : selectedLitho.every(sp => present.includes(sp));
 
-    if (lithoMode === "and") {
-      const match = selectedLitho.every(sp =>
-        present.includes(sp)
-      );
-      if (!match) visible = false;
-    }
-
-      }else if (selectedLitho.length === 0) {
-      visible = true;
-    }
+    visible = visible && match;
   }
+}
 
   // =====================
   // STORE STATE ONLY
@@ -5702,10 +5692,7 @@ allMarkers.forEach(entry => {
   entry.state.lithoMode = lithoMode;
   entry.state.selectedLitho = selectedLitho;
 
-  entry.state.moths = {
-  POL: hasPOL,
-  OBS: hasOBS
-};
+
 
   renderMarker(entry);
 });
@@ -5765,10 +5752,9 @@ function updateSearchHighlight() {
       pop.id.toLowerCase().includes(searchQuery) ||
       pop.name.toLowerCase().includes(searchQuery);
 
-    updateAllRender();
-
   });
 
+  updateAllRender();
 }
 
 
@@ -5822,10 +5808,8 @@ function renderMarker(entry) {
   // MOTH COLOR MODE
   // =========================
 
-  // =========================
-// COLOR MODE ROUTING
-// =========================
-
+  const hasPOL = entry.population.site.moths.includes("POL");
+const hasOBS = entry.population.site.moths.includes("OBS");
 
   let fillColor = defaultColor;
 
@@ -5833,19 +5817,16 @@ if (state.displayMode === "moth") {
 
   if (state.mothMode === "or") {
 
-    if (state.hasPOL && state.hasOBS) {
-      fillColor = mothColors.BOTH;
-    } else if (state.hasPOL) {
-      fillColor = mothColors.POL;
-    } else if (state.hasOBS) {
-      fillColor = mothColors.OBS;
-    }
+    if (hasPOL && hasOBS) fillColor = mothColors.BOTH;
+    else if (hasPOL) fillColor = mothColors.POL;
+    else if (hasOBS) fillColor = mothColors.OBS;
 
   } else {
-    // AND or single logic fallback
-    if (state.moths.hasPOL) fillColor = mothColors.POL;
-    else if (state.moths.hasOBS) fillColor = mothColors.OBS;
+
+    if (hasPOL) fillColor = mothColors.POL;
+    else if (hasOBS) fillColor = mothColors.OBS;
   }
+
   style.fillColor = fillColor;
 }else if (state.displayMode === "litho") {
 
