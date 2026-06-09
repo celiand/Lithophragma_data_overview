@@ -5496,6 +5496,20 @@ marker.on("popupclose", () => {
   );
 
 
+// filter part : has sequencing data
+
+function hasSequencingData(pop) {
+
+  return Object.values(pop.genetics || {}).some(species =>
+
+    Object.values(species.ploidy || {}).some(count =>
+      count > 0
+    )
+
+  );
+
+}
+
 //filter part - moth
 const mothColors = {
   POL: "#eaa91eef",
@@ -5518,6 +5532,9 @@ function updateFilters() {
 
     const showPNAS =
   document.getElementById("filterPNAS2025").checked;
+
+  const showSequencing =
+  document.getElementById("filterSequencing").checked;
 
   allMarkers.forEach(entry => {
     const pop = entry.population;
@@ -5554,6 +5571,10 @@ function updateFilters() {
     if (showPNAS && !hasPNAS) {
       visible = false;
     }
+
+    if (showSequencing && !hasSequencing) {
+  visible = false;
+}
 
     entry.state.visible = visible;
     
@@ -5600,6 +5621,10 @@ document
   );
 
   document.getElementById("filterPNAS2025")
+  .addEventListener("change", updateFilters);
+
+  document
+  .getElementById("filterSequencing")
   .addEventListener("change", updateFilters);
 
 
