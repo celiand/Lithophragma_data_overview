@@ -5324,8 +5324,8 @@ const entry = {
 
     searchMatch: true,
 
-    mothColorMode: false,
-    mothColor: defaultColor
+    //mothColorMode: false,
+    //mothColor: defaultColor
   }
 };
 
@@ -5666,16 +5666,12 @@ const selectedLitho = getSelectedLithoSpecies();
 
     entry.state.visible = visible;
     
+    entry.state.displayMode = displayMode;
+entry.state.mothMode = mode;
+entry.state.lithoMode = lithoMode;
 
-// activate special color mode only in this case
-entry.state.mothColorMode =
-  (mode === "or" && showPOL && showOBS);
+entry.state.selectedLitho = selectedLitho;
 
-// compute moth color
-entry.state.mothColor =
-  entry.state.mothColorMode
-    ? getMothColor(pop)
-    : defaultColor;
 
 renderMarker(entry);
 
@@ -5715,7 +5711,7 @@ document
   .getElementById("filterSequencing")
   .addEventListener("change", updateFilters);
 
-
+if (false){
 function getMothColor(pop) {
 
   const hasPOL = pop.site.moths.includes("POL");
@@ -5726,6 +5722,7 @@ function getMothColor(pop) {
   if (hasOBS) return mothColors.OBS;
 
   return defaultColor;
+}
 }
 
 // search logic
@@ -5803,11 +5800,34 @@ function renderMarker(entry) {
   // MOTH COLOR MODE
   // =========================
 
-  if (state.mothColorMode) {
+  // =========================
+// COLOR MODE ROUTING
+// =========================
 
-    style.fillColor = state.mothColor;
+if (state.displayMode === "moth") {
 
+  const hasPOL = entry.population.site.moths.includes("POL");
+  const hasOBS = entry.population.site.moths.includes("OBS");
+
+  if (state.mothMode === "or" && hasPOL && hasOBS) {
+    style.fillColor = mothColors.BOTH;
+
+  } else if (hasPOL) {
+    style.fillColor = mothColors.POL;
+
+  } else if (hasOBS) {
+    style.fillColor = mothColors.OBS;
   }
+
+}else if (state.displayMode === "litho") {
+
+  style.fillColor =
+    computeLithoColor(
+      entry.population,
+      state.selectedLitho,
+      state.lithoMode
+    );
+}
 
   // =========================
   // SEARCH EFFECT
