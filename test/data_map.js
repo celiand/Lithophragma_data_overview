@@ -5324,15 +5324,8 @@ const entry = {
 
     searchMatch: true,
 
-    displayMode: "moth",
-    mothMode: "or",
-    lithoMode: "or",
-
-    selectedLitho: [],
-
-    hasPOL: false,
-    hasOBS: false
-
+    mothColorMode: false,
+    mothColor: defaultColor
   }
 };
 
@@ -5508,6 +5501,8 @@ const lithoControls = document.getElementById("lithoControls");
 
 function updateDisplayMode() {
 
+  console.log("display mode script loaded");
+
   const mode = document.querySelector(
     'input[name="displayMode"]:checked'
   ).value;
@@ -5589,18 +5584,6 @@ function computeLithoColor(pop, selectedSpecies, mode) {
   return defaultColor;
 }
 
-function getSelectedLithoSpecies() {
-
-  const ids = [
-    "BOL", "GLA", "AFF", "HET", "CYM",
-    "PAR", "TRI", "CAM", "TEN", "THO",
-    "MAX", "AFFm"
-  ];
-
-  return ids.filter(id =>
-    document.getElementById("filter" + id)?.checked
-  );
-}
 
 
 function updateFilters() {
@@ -5620,82 +5603,64 @@ function updateFilters() {
   const showSequencing =
   document.getElementById("filterSequencing").checked;
 
-  const displayMode = document.querySelector('input[name="displayMode"]:checked').value;
+  allMarkers.forEach(entry => {
+    const pop = entry.population;
+    const marker = entry.marker;
 
-const lithoMode = document.querySelector('input[name="lithoMode"]:checked').value;
+    const hasPOL = pop.site.moths.includes("POL");
+    const hasOBS = pop.site.moths.includes("OBS");
 
-const selectedLitho = getSelectedLithoSpecies();
+    const hasPNAS = HAS_PNAS_2025(pop);
 
-allMarkers.forEach(entry => {
-  const pop = entry.population;
+    const hasSequencing = hasSequencingData(pop);
 
-  const hasPOL = pop.site.moths.includes("POL");
-  const hasOBS = pop.site.moths.includes("OBS");
+    let visible = true;
+    
+    // if no filters selected → show everything
+    if (showPOL || showOBS) {
 
-  const hasPNAS = HAS_PNAS_2025(pop);
-  const hasSequencing = hasSequencingData(pop);
+      if (mode === "or") {
 
-  let visible = true;
+        // OR logic: at least one match
+        visible =
+          (showPOL && hasPOL) ||
+          (showOBS && hasOBS);
 
-  // =====================
-  // moth filter
-  // =====================
-  if (showPOL || showOBS) {
+      }
 
-    if (mode === "or") {
-      visible =
-        (showPOL && hasPOL) ||
-        (showOBS && hasOBS);
+      if (mode === "and") {
+
+        // AND logic: must satisfy all selected filters
+
+        if (showPOL && !hasPOL) visible = false;
+        if (showOBS && !hasOBS) visible = false;
+      }
     }
 
-    if (mode === "and") {
-      if (showPOL && !hasPOL) visible = false;
-      if (showOBS && !hasOBS) visible = false;
+    if (showPNAS && !hasPNAS) {
+      visible = false;
     }
-  }
 
-  // =====================
-  // pnas filter
-  // =====================
-  if (showPNAS && !hasPNAS) visible = false;
-
-  // =====================
-  // sequencing filter
-  // =====================
-  if (showSequencing && !hasSequencing) visible = false;
-
-  // =====================
-  // litho filter
-  // =====================
-  if (displayMode === "litho") {
-
-  const present = Object.keys(pop.genetics || {});
-
-  if (selectedLitho.length > 0) {
-
-    const match =
-      lithoMode === "or"
-        ? present.some(sp => selectedLitho.includes(sp))
-        : selectedLitho.every(sp => present.includes(sp));
-
-    visible = visible && match;
-  }
+    if (showSequencing && !hasSequencing) {
+  visible = false;
 }
 
-  // =====================
-  // STORE STATE ONLY
-  // =====================
-  entry.state.visible = visible;
+    entry.state.visible = visible;
+    
 
-  entry.state.displayMode = displayMode;
-  entry.state.mothMode = mode;
-  entry.state.lithoMode = lithoMode;
-  entry.state.selectedLitho = selectedLitho;
+// activate special color mode only in this case
+entry.state.mothColorMode =
+  (mode === "or" && showPOL && showOBS);
 
+// compute moth color
+entry.state.mothColor =
+  entry.state.mothColorMode
+    ? getMothColor(pop)
+    : defaultColor;
 
+renderMarker(entry);
 
-  renderMarker(entry);
-});
+  });
 
   const legend = document.getElementById("legend");
 
@@ -5732,6 +5697,18 @@ document
   .addEventListener("change", updateFilters);
 
 
+function getMothColor(pop) {
+
+  const hasPOL = pop.site.moths.includes("POL");
+  const hasOBS = pop.site.moths.includes("OBS");
+
+  if (hasPOL && hasOBS) return mothColors.BOTH;
+  if (hasPOL) return mothColors.POL;
+  if (hasOBS) return mothColors.OBS;
+
+  return defaultColor;
+}
+
 // search logic
 
 let searchQuery = "";
@@ -5749,21 +5726,20 @@ function updateSearchHighlight() {
 
     entry.state.searchMatch =
       searchQuery === "" ||
+
       pop.id.toLowerCase().includes(searchQuery) ||
+
       pop.name.toLowerCase().includes(searchQuery);
+
+    renderMarker(entry);
 
   });
 
-  updateAllRender();
 }
 
 
 
 //centralized style function
-
-function updateAllRender() {
-  allMarkers.forEach(renderMarker);
-}
 
 function renderMarker(entry) {
 
@@ -5808,35 +5784,11 @@ function renderMarker(entry) {
   // MOTH COLOR MODE
   // =========================
 
-  const hasPOL = entry.population.site.moths.includes("POL");
-const hasOBS = entry.population.site.moths.includes("OBS");
+  if (state.mothColorMode) {
 
-  let fillColor = defaultColor;
+    style.fillColor = state.mothColor;
 
-if (state.displayMode === "moth") {
-
-  if (state.mothMode === "or") {
-
-    if (hasPOL && hasOBS) fillColor = mothColors.BOTH;
-    else if (hasPOL) fillColor = mothColors.POL;
-    else if (hasOBS) fillColor = mothColors.OBS;
-
-  } else {
-
-    if (hasPOL) fillColor = mothColors.POL;
-    else if (hasOBS) fillColor = mothColors.OBS;
   }
-
-  style.fillColor = fillColor;
-}else if (state.displayMode === "litho") {
-
-  style.fillColor =
-    computeLithoColor(
-      entry.population,
-      state.selectedLitho,
-      state.lithoMode
-    );
-}
 
   // =========================
   // SEARCH EFFECT
