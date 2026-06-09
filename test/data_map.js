@@ -5490,6 +5490,12 @@ marker.on("popupclose", () => {
 
 // display type
 
+    document
+  .querySelectorAll('input[name="displayMode"]')
+  .forEach(el =>
+    el.addEventListener("change", updateDisplayMode)
+  );
+
 const mothControls = document.getElementById("mothControls");
 const lithoControls = document.getElementById("lithoControls");
 
@@ -5548,12 +5554,6 @@ function updateFilters() {
 
   const mode =
     document.querySelector('input[name="mothMode"]:checked').value;
-
-    document
-  .querySelectorAll('input[name="displayMode"]')
-  .forEach(el =>
-    el.addEventListener("change", updateDisplayMode)
-  );
 
     const showPNAS =
   document.getElementById("filterPNAS2025").checked;
