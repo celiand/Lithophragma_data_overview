@@ -5592,10 +5592,9 @@ function getSelectedLithoSpecies() {
     "MAX", "AFFm"
   ];
 
-  return ids.filter(id => {
-    const el = document.getElementById("filter" + id);
-    return el && el.checked;
-  });
+  return ids.filter(id =>
+    document.getElementById("filter" + id)?.checked
+  );
 }
 
 
@@ -5672,6 +5671,29 @@ entry.state.lithoMode = lithoMode;
 
 entry.state.selectedLitho = selectedLitho;
 
+if (displayMode === "litho" && selectedLitho.length > 0) {
+
+  const present = Object.keys(pop.genetics || {});
+
+  if (lithoMode === "or") {
+
+    const match = present.some(sp =>
+      selectedLitho.includes(sp)
+    );
+
+    visible = visible && match;
+  }
+
+  if (lithoMode === "and") {
+
+    const match = selectedLitho.every(sp =>
+      present.includes(sp)
+    );
+
+    visible = visible && match;
+  }
+}
+
 
 renderMarker(entry);
 
@@ -5711,19 +5733,6 @@ document
   .getElementById("filterSequencing")
   .addEventListener("change", updateFilters);
 
-if (false){
-function getMothColor(pop) {
-
-  const hasPOL = pop.site.moths.includes("POL");
-  const hasOBS = pop.site.moths.includes("OBS");
-
-  if (hasPOL && hasOBS) return mothColors.BOTH;
-  if (hasPOL) return mothColors.POL;
-  if (hasOBS) return mothColors.OBS;
-
-  return defaultColor;
-}
-}
 
 // search logic
 
@@ -5804,21 +5813,32 @@ function renderMarker(entry) {
 // COLOR MODE ROUTING
 // =========================
 
+
+  let fillColor = defaultColor;
+
 if (state.displayMode === "moth") {
 
   const hasPOL = entry.population.site.moths.includes("POL");
   const hasOBS = entry.population.site.moths.includes("OBS");
 
-  if (state.mothMode === "or" && hasPOL && hasOBS) {
-    style.fillColor = mothColors.BOTH;
+  const mode = state.mothMode;
 
-  } else if (hasPOL) {
-    style.fillColor = mothColors.POL;
+  const showPOL = document.getElementById("filterPOL").checked;
+  const showOBS = document.getElementById("filterOBS").checked;
 
-  } else if (hasOBS) {
-    style.fillColor = mothColors.OBS;
+  // OR BOTH
+  if (mode === "or" && showPOL && showOBS) {
+
+    if (hasPOL && hasOBS) fillColor = mothColors.BOTH;
+    else if (hasPOL) fillColor = mothColors.POL;
+    else if (hasOBS) fillColor = mothColors.OBS;
+
+  } else {
+
+    // fallback (single or AND mode)
+    if (hasPOL && showPOL) fillColor = mothColors.POL;
+    else if (hasOBS && showOBS) fillColor = mothColors.OBS;
   }
-
 }else if (state.displayMode === "litho") {
 
   style.fillColor =
