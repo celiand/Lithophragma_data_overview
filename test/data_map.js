@@ -5591,12 +5591,12 @@ function populationHasSpecies(pop, species) {
 
 }
 
+
 function updateFilters() {
   const displayMode =
   document.querySelector(
     'input[name="displayMode"]:checked'
   ).value;
-
 
   const showPOL =
     document.getElementById("filterPOL").checked;
@@ -5612,6 +5612,54 @@ function updateFilters() {
 
   const showSequencing =
   document.getElementById("filterSequencing").checked;
+
+
+  // ----------------------
+  // Lithophragma filters
+  // ----------------------
+
+  const selectedLitho = [];
+
+  if (document.getElementById("filterBOL").checked)
+    selectedLitho.push("BOL");
+
+  if (document.getElementById("filterCYM").checked)
+    selectedLitho.push("CYM");
+
+  if (document.getElementById("filterGLA").checked)
+    selectedLitho.push("GLA");
+
+  if (document.getElementById("filterAFF").checked)
+    selectedLitho.push("AFF");
+
+  if (document.getElementById("filterPAR").checked)
+    selectedLitho.push("PAR");
+
+  if (document.getElementById("filterTRI").checked)
+    selectedLitho.push("TRI");
+
+  if (document.getElementById("filterHET").checked)
+    selectedLitho.push("HET");
+
+  if (document.getElementById("filterCAM").checked)
+    selectedLitho.push("CAM");
+
+  if (document.getElementById("filterTEN").checked)
+    selectedLitho.push("TEN");
+
+  if (document.getElementById("filterAFFm").checked)
+    selectedLitho.push("AFFm");
+
+  if (document.getElementById("filterMAX").checked)
+    selectedLitho.push("MAX");
+
+  if (document.getElementById("filterTHO").checked)
+    selectedLitho.push("THO");
+
+  const lithoMode =
+    document.querySelector(
+      'input[name="lithoMode"]:checked'
+    ).value;
 
   allMarkers.forEach(entry => {
     const pop = entry.population;
@@ -5738,6 +5786,17 @@ document
   .getElementById("filterSequencing")
   .addEventListener("change", updateFilters);
 
+  document
+  .querySelectorAll(".lithoFilter")
+  .forEach(el =>
+    el.addEventListener("change", updateFilters)
+  );
+
+  document
+  .querySelectorAll('input[name="lithoMode"]')
+  .forEach(el =>
+    el.addEventListener("change", updateFilters)
+  );
 
 function getMothColor(pop) {
 
