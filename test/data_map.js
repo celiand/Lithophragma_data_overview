@@ -5584,9 +5584,19 @@ function computeLithoColor(pop, selectedSpecies, mode) {
   return defaultColor;
 }
 
+function populationHasSpecies(pop, species) {
 
+  return pop.genetics &&
+         pop.genetics[species] !== undefined;
+
+}
 
 function updateFilters() {
+  const displayMode =
+  document.querySelector(
+    'input[name="displayMode"]:checked'
+  ).value;
+
 
   const showPOL =
     document.getElementById("filterPOL").checked;
@@ -5617,25 +5627,57 @@ function updateFilters() {
     let visible = true;
     
     // if no filters selected → show everything
-    if (showPOL || showOBS) {
+    if (displayMode === "moth") {
 
-      if (mode === "or") {
+      if (showPOL || showOBS) {
 
-        // OR logic: at least one match
-        visible =
-          (showPOL && hasPOL) ||
-          (showOBS && hasOBS);
+        if (mode === "or") {
+
+          visible =
+            (showPOL && hasPOL) ||
+            (showOBS && hasOBS);
+
+        }
+
+        if (mode === "and") {
+
+          if (showPOL && !hasPOL) visible = false;
+          if (showOBS && !hasOBS) visible = false;
+
+        }
 
       }
 
-      if (mode === "and") {
-
-        // AND logic: must satisfy all selected filters
-
-        if (showPOL && !hasPOL) visible = false;
-        if (showOBS && !hasOBS) visible = false;
-      }
     }
+
+    if (displayMode === "litho") {
+
+  const lithoMode =
+    document.querySelector(
+      'input[name="lithoMode"]:checked'
+    ).value;
+
+  if (selectedLitho.length > 0) {
+
+    if (lithoMode === "or") {
+
+      visible = selectedLitho.some(
+        species => populationHasSpecies(pop, species)
+      );
+
+    }
+
+    if (lithoMode === "and") {
+
+      visible = selectedLitho.every(
+        species => populationHasSpecies(pop, species)
+      );
+
+    }
+
+  }
+
+}
 
     if (showPNAS && !hasPNAS) {
       visible = false;
@@ -5650,7 +5692,7 @@ function updateFilters() {
 
 // activate special color mode only in this case
 entry.state.mothColorMode =
-  (mode === "or" && showPOL && showOBS);
+  (displayMode === "moth" && mode === "or" && showPOL && showOBS);
 
 // compute moth color
 entry.state.mothColor =
@@ -5664,7 +5706,7 @@ renderMarker(entry);
 
   const legend = document.getElementById("legend");
 
-if (mode === "or" && showPOL && showOBS) {
+if (displayMode === "moth" && mode === "or" && showPOL && showOBS) {
   legend.classList.remove("hidden");
 } else {
   legend.classList.add("hidden");
