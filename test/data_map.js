@@ -5328,7 +5328,9 @@ const entry = {
     mothColor: defaultColor,
 
     lithoColorMode: false,
-    lithoSpecies: []
+    lithoSpecies: [],
+
+    isPie: false
   }
 };
 
@@ -5562,6 +5564,98 @@ const lithoColors = {
   MAX: "#0ec566",
   AFFm: "#450e56",
 };
+
+function createPieSVG(speciesList) {
+
+  const colors = speciesList.map(
+    sp => lithoColors[sp] || defaultColor
+  );
+
+  const n = speciesList.length;
+
+  // calculate slices
+  let slices = "";
+
+  let start = 0;
+
+  speciesList.forEach((sp, i) => {
+
+    const end = start + 360 / n;
+
+    slices += `
+      <path
+        d="${describeArc(10,10,10,start,end)}"
+        fill="${colors[i]}"
+      />
+    `;
+
+    start = end;
+
+  });
+
+
+  return `
+  <svg width="24" height="24" viewBox="0 0 20 20">
+
+    ${slices}
+
+    <circle
+      cx="10"
+      cy="10"
+      r="9.5"
+      fill="none"
+      stroke="#222"
+      stroke-width="1"
+    />
+
+  </svg>
+  `;
+}
+
+function describeArc(cx, cy, r, startAngle, endAngle) {
+
+  const start = polarToCartesian(
+    cx,
+    cy,
+    r,
+    endAngle
+  );
+
+  const end = polarToCartesian(
+    cx,
+    cy,
+    r,
+    startAngle
+  );
+
+  const largeArcFlag =
+    endAngle - startAngle <= 180 ? "0" : "1";
+
+
+  return [
+    "M", cx, cy,
+    "L", start.x, start.y,
+    "A", r, r, 0, largeArcFlag, 0, end.x, end.y,
+    "Z"
+  ].join(" ");
+
+}
+
+
+function polarToCartesian(cx, cy, r, angle) {
+
+  const radians =
+    (angle - 90) * Math.PI / 180;
+
+  return {
+
+    x: cx + r * Math.cos(radians),
+
+    y: cy + r * Math.sin(radians)
+
+  };
+
+}
 
 function computeLithoColor(pop, selectedSpecies, mode) {
 
@@ -5860,6 +5954,23 @@ function renderMarker(entry) {
   const marker = entry.marker;
   const state = entry.state;
 
+  // restore normal circle if we are leaving pie mode
+
+if (!state.lithoColorMode && state.isPie) {
+
+  marker.setStyle({
+    radius:7,
+    color:"#222",
+    fillColor:defaultColor,
+    weight:1,
+    opacity:1,
+    fillOpacity:0.9
+  });
+
+  state.isPie=false;
+
+}
+
   // =========================
   // VISIBILITY
   // =========================
@@ -5908,9 +6019,6 @@ function renderMarker(entry) {
   // LITHO COLOR MODE
   // =========================
 
-  // =========================
-// LITHOPHRAGMA COLOR MODE
-// =========================
 
 if (state.lithoColorMode) {
 
@@ -5923,10 +6031,31 @@ if (state.lithoColorMode) {
 
   if (state.lithoSpecies.length > 1) {
 
-    console.log(severalspecies);
+    marker.setIcon(
+      L.divIcon({
+
+        className:"pie-marker",
+
+        html:createPieSVG(
+          state.lithoSpecies
+        ),
+
+        iconSize:[24,24],
+
+        iconAnchor:[12,12]
+
+      })
+    );
+
+    state.isPie=true;
+
+    return;
   }
 
 }
+
+
+
 
   // =========================
   // SEARCH EFFECT
@@ -5966,6 +6095,11 @@ if (state.lithoColorMode) {
   // =========================
   // APPLY STYLE
   // =========================
+
+  if (state.isPie) {
+    // don't apply circle styles
+    return;
+}
 
   marker.setStyle(style);
 
