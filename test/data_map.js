@@ -5325,7 +5325,10 @@ const entry = {
     searchMatch: true,
 
     mothColorMode: false,
-    mothColor: defaultColor
+    mothColor: defaultColor,
+
+    lithoColorMode: false,
+    lithoSpecies: []
   }
 };
 
@@ -5748,6 +5751,16 @@ entry.state.mothColor =
     ? getMothColor(pop)
     : defaultColor;
 
+    entry.state.lithoColorMode =
+  displayMode === "litho" &&
+  lithoMode === "or" &&
+  selectedLitho.length >= 2;
+
+entry.state.lithoSpecies =
+  selectedLitho.filter(sp =>
+    populationHasSpecies(pop, sp)
+  );
+
 renderMarker(entry);
 
   });
@@ -5890,6 +5903,30 @@ function renderMarker(entry) {
     style.fillColor = state.mothColor;
 
   }
+
+  // =========================
+  // LITHO COLOR MODE
+  // =========================
+
+  // =========================
+// LITHOPHRAGMA COLOR MODE
+// =========================
+
+if (state.lithoColorMode) {
+
+  if (state.lithoSpecies.length === 1) {
+
+    style.fillColor =
+      lithoColors[state.lithoSpecies[0]];
+
+  }
+
+  if (state.lithoSpecies.length > 1) {
+
+    console.log(severalspecies);
+  }
+
+}
 
   // =========================
   // SEARCH EFFECT
