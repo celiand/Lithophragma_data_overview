@@ -21,6 +21,8 @@
   <div><span class="dot obs"></span> OBS only</div>
   <div><span class="dot both"></span> Both</div>
 </div>
+<div id="lithoLegend" class="legend hidden">
+</div>
 <div id="controls">
 <div class="search-box">
   <input
@@ -30,16 +32,35 @@
   />
 </div>
 
+<h4>Display mode</h4>
+
+<label>
+  <input
+    type="radio"
+    name="displayMode"
+    value="moth"
+    checked>
+  Moths species
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="displayMode"
+    value="litho">
+  Lithophragma Species
+</label>
+  <div id="mothControls">
   <h4>Moth filter</h4>
 
   <label>
     <input type="radio" name="mothMode" value="or" checked>
-    OR (any match)
+    OR (Any selected species)
   </label>
 
   <label>
     <input type="radio" name="mothMode" value="and">
-    AND (must have all selected)
+    AND (All selected species)
   </label>
 
   <hr>
@@ -53,6 +74,104 @@
     <input type="checkbox" id="filterOBS">
     OBS
   </label>
+</div>
+
+<div id="lithoControls" class="hidden">
+  <h4>Lithophragma filter</h4>
+
+  <label>
+    <input type="radio" name="lithoMode" value="or" checked>
+    OR (Any selected species)
+  </label>
+
+  <label>
+    <input type="radio" name="lithoMode" value="and">
+    AND (All selected species)
+  </label>
+
+  <hr>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterBOL">
+    BOL
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterCYM">
+    CYM
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterGLA">
+    GLA
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterHET">
+    HET
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterAFF">
+    AFF
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterPAR">
+    PAR
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterTRI">
+    TRI
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterCAM">
+    CAM
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterTEN">
+    TEN
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterMAX">
+    MAX
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterTHO">
+    THO
+  </label>
+
+  <label>
+    <input class="lithoFilter" type="checkbox" id="filterAFFm">
+    AFFm
+  </label>
+
+</div>
+
+  <h4>Sequencing data filter</h4>
+
+  <label class="switch">
+  <input type="checkbox" id="filterSequencing">
+  <span class="slider"></span>
+</label>
+
+<label for="filterSequencing">
+  Sequencing data
+</label>
+
+  <h4>Article filter</h4>
+
+<label class="switch">
+  <input type="checkbox" id="filterPNAS2025">
+  <span class="slider"></span>
+</label>
+
+<span>PNAS 2025</span>
 
 </div>
                     
