@@ -5349,7 +5349,7 @@ const entry = {
 
 allMarkers.push(entry);
 
-  marker.bindPopup(`
+  const popupContent = `
     <div class="popup-title">
       <a class="linkpopuptitle" href="individuals.html#${pop.id}">
           ${pop.name}
@@ -5484,7 +5484,12 @@ ${
   * POL = G. politella ; OBS = G. obscura<br>
   ** BOL = L. bolanderi, CYM = L. cymbalaria, GLA = L. glabrum, HET = L. heterophyllum, AFF = L. affine, PAR = L. parviflorum, TEN = L. tenellum, THO = L. thompsonii, CAM = L. campanulatum, TRI = L. trifoliatum, MAX = L. maximum, AFFm= L. affine mixtum
 </div>
-`);
+`;
+
+
+marker.bindPopup(popupContent);
+
+pieMarker.bindPopup(popupContent);
 
 
 marker.on("popupopen", () => {
@@ -5496,6 +5501,23 @@ marker.on("popupopen", () => {
 });
 
 marker.on("popupclose", () => {
+
+  entry.state.popupOpen = false;
+
+  renderMarker(entry);
+
+});
+
+
+pieMarker.on("popupopen", () => {
+
+  entry.state.popupOpen = true;
+
+  renderMarker(entry);
+
+});
+
+pieMarker.on("popupclose", () => {
 
   entry.state.popupOpen = false;
 
@@ -5886,6 +5908,8 @@ entry.state.mothColor =
   lithoMode === "or" &&
   selectedLitho.length >= 2;
 
+  
+
 entry.state.lithoSpecies =
   selectedLitho.filter(sp =>
     populationHasSpecies(pop, sp)
@@ -5894,6 +5918,23 @@ entry.state.lithoSpecies =
 renderMarker(entry);
 
   });
+
+  if(
+  displayMode === "litho" &&
+  lithoMode === "or" &&
+  selectedLitho.length >= 2
+){
+
+  updateLithoLegend(selectedLitho);
+
+}
+else{
+
+  document
+    .getElementById("lithoLegend")
+    .classList.add("hidden");
+
+}
 
   const legend = document.getElementById("legend");
 
@@ -6143,6 +6184,45 @@ else {
   marker.setStyle(style);
 
 }
+
+}
+
+
+// update litho legend function
+
+function updateLithoLegend(speciesList){
+
+  const legend =
+    document.getElementById("lithoLegend");
+
+
+  if(speciesList.length < 2){
+
+    legend.classList.add("hidden");
+    return;
+
+  }
+
+
+  legend.innerHTML = "";
+
+
+  speciesList.forEach(sp => {
+
+    legend.innerHTML += `
+      <div>
+        <span 
+          class="dot"
+          style="background:${lithoColors[sp]}">
+        </span>
+        ${sp}
+      </div>
+    `;
+
+  });
+
+
+  legend.classList.remove("hidden");
 
 }
 
