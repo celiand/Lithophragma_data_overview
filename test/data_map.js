@@ -5312,9 +5312,22 @@
   }
 ).addTo(map);
 
+const pieMarker = L.marker(
+  [pop.lat, pop.lon],
+  {
+    icon: L.divIcon({
+      className:"pie-marker",
+      html:"",
+      iconSize:[24,24],
+      iconAnchor:[12,12]
+    })
+  }
+);
+
 const entry = {
 
   marker: marker,
+  pieMarker: pieMarker,
   population: pop,
 
   state: {
@@ -5681,6 +5694,29 @@ function computeLithoColor(pop, selectedSpecies, mode) {
   return defaultColor;
 }
 
+function updatePieMarker(entry) {
+
+  const pieMarker = entry.pieMarker;
+  const state = entry.state;
+
+  pieMarker.setIcon(
+    L.divIcon({
+
+      className:"pie-marker",
+
+      html:createPieSVG(
+        state.lithoSpecies
+      ),
+
+      iconSize:[24,24],
+
+      iconAnchor:[12,12]
+
+    })
+  );
+
+}
+
 function populationHasSpecies(pop, species) {
 
   return pop.genetics &&
@@ -5952,6 +5988,7 @@ function updateSearchHighlight() {
 function renderMarker(entry) {
 
   const marker = entry.marker;
+  const pieMarker = entry.pieMarker;
   const state = entry.state;
 
   // restore normal circle if we are leaving pie mode
@@ -5982,6 +6019,7 @@ if (!state.lithoColorMode && state.isPie) {
   } else {
 
     marker.remove();
+    pieMarker.remove();
 
     return;
   }
@@ -6029,28 +6067,7 @@ if (state.lithoColorMode) {
 
   }
 
-  if (state.lithoSpecies.length > 1) {
-
-    marker.setIcon(
-      L.divIcon({
-
-        className:"pie-marker",
-
-        html:createPieSVG(
-          state.lithoSpecies
-        ),
-
-        iconSize:[24,24],
-
-        iconAnchor:[12,12]
-
-      })
-    );
-
-    state.isPie=true;
-
-    return;
-  }
+  // multi species handled differently
 
 }
 
@@ -6096,12 +6113,36 @@ if (state.lithoColorMode) {
   // APPLY STYLE
   // =========================
 
-  if (state.isPie) {
-    // don't apply circle styles
-    return;
+// =========================
+// FINAL MARKER TYPE
+// =========================
+
+
+if (
+  state.lithoColorMode &&
+  state.lithoSpecies.length > 1
+) {
+
+  marker.remove();
+
+  updatePieMarker(entry);
+
+  pieMarker.addTo(map);
+
+  state.isPie=true;
+
 }
+else {
+
+  pieMarker.remove();
+
+  marker.addTo(map);
+
+  state.isPie=false;
 
   marker.setStyle(style);
+
+}
 
 }
 
