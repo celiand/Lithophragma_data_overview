@@ -5347,13 +5347,19 @@ const entry = {
   }
 };
 
+// backup code for pop file
+//<a class="linkpopuptitle" href="individuals.html#${pop.id}">
+          //${pop.name}
+      //</a>
+
 allMarkers.push(entry);
 
   const popupContent = `
     <div class="popup-title">
-      <a class="linkpopuptitle" href="individuals.html#${pop.id}">
-          ${pop.name}
+      
+    <a class="linkpopuptitle" href="https://docs.google.com/spreadsheets/d/1cj2JUmwZot3LqaKv51Nlwpsnpt66qY0tTW1N8IpQQfc/edit?usp=sharing"
       </a>
+      
     </div>
 
 <div class="popup-section">
