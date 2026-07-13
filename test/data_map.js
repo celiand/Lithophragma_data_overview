@@ -5357,8 +5357,9 @@ allMarkers.push(entry);
   const popupContent = `
     <div class="popup-title">
       
-    <a class="linkpopuptitle" href="https://docs.google.com/spreadsheets/d/1cj2JUmwZot3LqaKv51Nlwpsnpt66qY0tTW1N8IpQQfc/edit?usp=sharing"
-      </a>
+    <a class="linkpopuptitle" href="https://docs.google.com/spreadsheets/d/1cj2JUmwZot3LqaKv51Nlwpsnpt66qY0tTW1N8IpQQfc/edit?usp=sharing">
+    ${pop.name}  
+    </a>
       
     </div>
 
